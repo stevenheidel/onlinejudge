@@ -11,7 +11,7 @@ default: test
 build:
 	@$(CC) $(CC_FLAGS)  *.cpp -o ${EXECUTABLE}
 
-run:
+run: build
 	@./${EXECUTABLE} < ${UVA_INPUT_FILE}
 
 test: build
