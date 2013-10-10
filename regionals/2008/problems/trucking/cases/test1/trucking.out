@@ -1,0 +1,39 @@
+Case 1:
+maximum height = 471
+length of shortest route = 177
+
+Case 2:
+maximum height = 7984
+length of shortest route = 31
+
+Case 3:
+maximum height = 1414
+length of shortest route = 91
+
+Case 4:
+maximum height = 3447
+length of shortest route = 101
+
+Case 5:
+maximum height = 4042
+length of shortest route = 186
+
+Case 6:
+maximum height = 9914
+length of shortest route = 4851
+
+Case 7:
+maximum height = 9955
+length of shortest route = 5124
+
+Case 8:
+maximum height = 9951
+length of shortest route = 2154
+
+Case 9:
+maximum height = 7069
+length of shortest route = 43
+
+Case 10:
+maximum height = 9919
+length of shortest route = 742

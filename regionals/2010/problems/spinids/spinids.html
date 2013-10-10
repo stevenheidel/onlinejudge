@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem Q: Spinids</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+ </head><body>
+    <h1>Problem Q: Spinids</h1>
+
+    <br/><b>Source:</b> <tt>spinids.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>Score words according to how similar they look when given a 180-degree spin.</p>
+
+<p>Spinning the shape of lowercase letters 180 degrees can transform
+them into other characters or into themselves. Such symmetric
+characters can be used in words, which when spinned, form the same
+word, such as mow and pod. In a spinids game, words are scored with
+respect to how symmetric they are when given a 180-degree spin.</p>
+
+<p>The letters that are spin-symmetric with themselves are <tt>l</tt>, <tt>o</tt>, and <tt>x</tt>.
+The letters that are spin-symmetric with some other letter are
+<tt>b</tt> vs. <tt>q</tt>, <tt>d</tt> vs. <tt>p</tt>, <tt>m</tt>
+vs. <tt>w</tt>, and <tt>n</tt> vs. <tt>u</tt>.</p>
+
+<p>The score <tt>s(c<sub>1</sub>,c<sub>2</sub>)</tt> of two letters
+<tt>c<sub>1</sub></tt> and <tt>c<sub>2</sub></tt> is 3 if the two
+letters are the same and spin symmetric, 2 if the letters are
+different and spin-symmetric, 1 if the letters are the same but not
+spin-symmetric, and 0 if the letters are not the same and not
+spin-symmetric.</p>
+
+<p>The score for a <tt>n</tt>-letter word <tt>w</tt> is the sum of the
+scores of the letter pairs:
+</p>
+<blockquote><tt>
+  s(w) = s(w<sub>1</sub>,w<sub>n</sub>)+s(w<sub>2</sub>,w<sub>n-1</sub>)+...+s(w<sub>n</sub>,w<sub>1</sub>).
+</tt></blockquote>
+
+<h1>Input</h1>
+
+<p>A list of lowercase alphabetic words, one per line.</p>
+
+<h1>Output</h1>
+
+<p>For every word in the input, the word and spinids-score of each
+word in the input, separated by a single blank space, one per
+line.</p>
+
+<h1 class="break">Sample input</h1>
+<pre>
+spinids
+xoxox
+deep 
+mow
+pod
+sis
+un
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+spinids 9
+xoxox 15
+deep 6
+mow 7
+pod 7
+sis 3
+un 4
+</pre>
+</body>
+</html>

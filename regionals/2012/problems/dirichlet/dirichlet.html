@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem C: Dirichlet's Theorem</title>
+    <style type="text/css"><!--
+			      html { margin-left: 4em; }
+			      h1 { margin-left: -2em; font-size: 14pt; }
+			      tt,pre { font-weight: bold; font-size: 12pt; }
+			      .image { text-align: center; border: 1px solid black; margin: 1em; }
+			      .left { float: left; }
+			      .right { float: right; }
+			      .break { page-break-before: always; }
+			     --></style>
+  </head><body>
+    <h1>Problem C: Dirichlet's Theorem</h1>
+
+    <br/><b>Source:</b> <tt>dirichlet.{c,cpp,java}</tt>
+
+    <p>
+      Dirichlet's theorem on arithmetic progressions states that for
+      any two positive integers <tt>a</tt> and <tt>b</tt>, if
+      <tt>gcd(a,b) = 1</tt> then the arithmetic progression <tt>t(n) =
+      a*n + b</tt> <tt>(n &ge; 0)</tt> contains infinitely many prime numbers. Recall that a prime number is a positive integer &ge; 2 that has no divisors other than 1 and itself.
+    </p>
+
+    <p>
+      For example, if <tt>a = 4</tt> and <tt>b = 3</tt>, then the arithmetic progression is 
+    </p>
+
+    <pre>
+      3, 7, 11, 15, 19, 23, 27, 31, 35, ...,
+    </pre>
+
+    <p>
+      and it can be seen that many prime numbers are contained in the first part of this list.
+    </p>
+
+    <p>
+      Given arbitrary integers <tt>a > 0</tt>, <tt>b &ge; 0</tt>, and <tt>U &ge; L &ge; 0</tt>, your job is to count how many values of <tt>t(n) = a*n+b</tt> are prime, where <tt>L &le; n &le; U</tt>.
+    </p>
+    <h1>Input</h1>
+
+    <p>
+      The input consists of a number of cases. The input for each case is specified by the four integers <tt>a</tt>, <tt>b</tt>, <tt>L</tt>, and <tt>U</tt> on a line. You may assume that <tt>a*U+b &le; 10<sup>12</sup></tt> and <tt>U - L &le; 10<sup>6</sup></tt>. A line containing a single 0 indicates the end of input.
+																												       </p>
+
+    <h1>Output</h1>
+    <p>
+      For each test case, print:
+    </p>
+    <pre>
+      Case xxx: yyy
+    </pre>
+    <p>where <tt>xxx</tt> is the case number (starting from 1), and <tt>yyy</tt> is the number of <tt>t(n), L &le; n &le; U</tt>, that are prime.    
+    </p>
+
+    <h1 class="break">Sample Input</h1>
+    <pre>
+4 3 0 8
+1 0 2 100
+2 7 0 1000
+0
+    </pre>
+
+    <h1>Sample Output</h1>
+    <pre>
+Case 1: 6
+Case 2: 25
+Case 3: 301
+    </pre>
+  </body>
+</html>

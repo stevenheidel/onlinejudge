@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem F: Soccer</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+</head><body>
+    <h1>Problem F: Soccer</h1>
+
+    <br/><b>Source:</b> <tt>soccer.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>In soccer, there are many different rewards (and punishments)
+depending on how you rank in the league at the end of a season. For
+example, in the British Premier League, the top 4 teams are eligible
+to play in the Champions League, the next team is eligible to play in
+the Europa League, and the bottom three teams are relegated to the
+lower division. It is now near the end of the soccer season, and there
+are still a number of games to be played. For any given team, we wish
+to know what is the highest and lowest rank it can have at the end of
+the season.</p>
+
+<p>For each game played, a team wins if it scores more goals than its
+opponent. A team loses a game if it scores fewer goals. When both
+teams score the same number of goals, we call it a draw. A team earns
+3 points for each win, 1 point for each draw and 0 point for each
+loss. Teams are ranked according to the number of points earned (more
+points result in a higher ranking). Teams that are tied are given the
+same rank. For example, if two teams are tied and have the next
+highest point total after the 3rd place team, then they are both
+ranked 4th (and the next team is ranked 6th). In real life, factors
+such as goal differences and goals scored are used to break ties, but
+we will not consider these for this problem.</p>
+
+<p>You are given a list of soccer teams and a list of matches in a
+season. You may assume that every team will play the same number of
+games at the end. Some of the matches have been played and the results
+are known.</p>
+
+<h1>Input</h1>
+
+<p>The input consists of a number of cases. The first line in each
+case specifies two integers <tt>n</tt> and <tt>m</tt> (<tt>2 &le; n
+&le; 20</tt>, <tt>1 &le; m &le; 1000</tt>) indicating 
+the number of teams in the league and the number of matches in the
+season. The next <tt>n</tt> lines contain the name of each team in its own
+line. The team names contain only alphabetic characters and have
+lengths at most 30 characters. This is followed by <tt>m</tt> lines each of the
+form</p>
+<blockquote><tt>
+team1 vs team2: x y
+</tt></blockquote>
+<p>with <tt>team1</tt> and <tt>team2</tt> being the names of two
+different teams, and <tt>x</tt> and <tt>y</tt> are non-negative
+integers (or both are -1), indicating that in the game between
+<tt>team1</tt> and <tt>team2</tt>, <tt>team1</tt> scores <tt>x</tt>
+goals and <tt>team2</tt> scores <tt>y</tt> goals. If both <tt>x</tt>
+and <tt>y</tt> are -1, then the game has not yet been played. At most
+12 games will not have been played yet.</p>
+
+<p>The input is terminated with <tt>n = m = 0</tt>.</p>
+
+<h1>Output</h1>
+
+<p>For each team in the same order as the team list in the input,
+print one line of the following form:</p>
+<blockquote><tt>
+  Team XXX can finish as high as nth place and as low as mth place.
+</tt></blockquote>
+<p>Use <tt>st</tt>, <tt>nd</tt>, and <tt>rd</tt> instead of <tt>th</tt> for first, second, and third place, respectively.
+Print a blank line between cases.</p>
+
+<h1 class="break">Sample input</h1>
+<pre>
+4 6
+ManUnited
+Arsenal
+Chelsea
+Tottenham
+ManUnited vs Arsenal: 3 1
+Chelsea vs Arsenal: 2 2
+ManUnited vs Chelsea: 1 0
+Tottenham vs ManUnited: -1 -1
+Tottenham vs Chelsea: 0 4
+Tottenham vs Arsenal: -1 -1
+0 0
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+Team ManUnited can finish as high as 1st place and as low as 1st place.
+Team Arsenal can finish as high as 2nd place and as low as 4th place.
+Team Chelsea can finish as high as 2nd place and as low as 3rd place.
+Team Tottenham can finish as high as 1st place and as low as 4th place.
+</pre>
+</body>
+</html>

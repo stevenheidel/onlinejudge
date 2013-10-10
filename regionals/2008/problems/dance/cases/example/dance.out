@@ -1,0 +1,7 @@
+form ok: dip twirl hop jiggle hop hop clap stomp clap
+form error 1: DIP hop jiggle hop hop clap stomp clap
+form error 2: dip twirl hop jiggle hop hop clap clap stomp
+form error 4: jiggle dip twirl hop jiggle hop hop clap stomp clap
+form errors 2 and 4: jiggle dip
+form errors 2, 4 and 5: jiggle
+form error 1: dip twirl hop DIP jiggle hop dip hop clap stomp clap

@@ -1,0 +1,26 @@
+when (1 xor $started$)
+  set $k1$=9,$k2$=2,$k3$=1,$k4$=0,$k5$=(0-1)
+  set $L.C.D.$=0,$old L.C.D.$=0
+  set $press timer$=100
+  set $started$=1
+end when
+when ($started$ and (($L.C.D.$<$old L.C.D.$) or ($old L.C.D.$<$L.C.D.$)))
+  print $L.C.D.$
+  set $old L.C.D.$=$L.C.D.$
+end when
+when ($started$ and (0<$press timer$))
+  set $press timer$=($press timer$-1)
+end when
+when ($started$ and (($press timer$<1) and ((0-1)<$k1$)))
+  set $press key$=1,$press code$=$k1$
+  set $k1$=$k2$,$k2$=$k3$,$k3$=$k4$,$k4$=$k5$
+  set $press timer$=100
+end when
+when ($started$ and $press key$)
+  set $press key$=0
+  set $2*code$=($code$+$code$)
+  set $5*code$=(($2*code$+$2*code$)+$code$)
+  set $10*code$=($5*code$+$5*code$)
+  set $code$=($10*code$+$press code$)
+  set $L.C.D.$=$code$
+end when

@@ -1,0 +1,95 @@
+<html>
+<title>PROB7: PLANKS</title>
+<body>
+<h4>PROB7: <font color="blue">PLANKS</font>
+</h4>
+<ul>
+  <p>Build a bridge over a swamp by connecting tree stumps with planks.</p>
+     </ul>
+<h4>DESCRIPTION</h4>
+<ul>
+<p>You are being chased by cannibals and you must figure out a way 
+ to get across a crocodile-infested swamp. The swap contains tree stumps which
+ are thankfully spaced on a regular, 10x10, grid, where each grid point is
+ 1 foot apart. In addition, there are thankfully some planks nearby that can
+ be placed across the tree stumps. The tree stump at the upper left corner 
+ of the grid is on land, as is the tree stump on the opposite bank of the 
+swamp at the lower right. You must figure out a layout of the planks that 
+will get you across the swamp. Each plank can only be used once and must start
+and end on a tree stump (with no stumps in-between). In addition, the planks
+must follow the grid horizontally or vertically -- no diagonally placed planks
+are allowed. This scenario is illustrated by the following figure.</p>
+     <img src="figs/figure1.png" alt="Figure 1" width="459" height="380">
+
+<p>A given problem may have more than one solution, but you are required
+to  find only one solution. Your solution does not have to be the most
+efficient, and you can use any combination of the planks. A valid
+solution can contain planks that cross over each other.</p>
+</ul>
+<h4>
+    INPUT: <font color="blue"><tt>prob7.dat</tt></font>
+  </h4>
+<ul>
+  <p>The input file contains one or more problems for a given swamp. The 
+swamp is defined as a 10 by 10 grid of characters. Each period (&quot;.&quot;) represents 
+ open space and each asterik (&quot;*&quot;) represents a stump. Each plank problem
+is defined  on one input line after the swamp definition. The first number
+on the line is the number  of planks available (max of 20). The remaining
+numbers are the lengths of  the available planks. Each plank is assigned
+a number based on its order in the list. For example, in line 11, plank 1
+is 9 ft long, plank 2 is 9 ft long, plank 3 is 5 ft long, and plank 4 is
+8 ft long.</p>
+<p>An example input file would be
+<tt><pre>
+<font color="red">       column   11111111112</font>
+<font color="red">       12345678901234567890</font>
+<font color="red">line 1:<font color="black">*...*....*</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">..........</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">**.*.*....</font><font size="-2">[EOL]</font></font>
+<font color="red">     4:<font color="black">..........</font><font size="-2">[EOL]</font></font>
+<font color="red">     5:<font color="black">..*....*..</font><font size="-2">[EOL]</font></font>
+<font color="red">     6:<font color="black">.....*....</font><font size="-2">[EOL]</font></font>
+<font color="red">     7:<font color="black">..........</font><font size="-2">[EOL]</font></font>
+<font color="red">     8:<font color="black">...*......</font><font size="-2">[EOL]</font></font>
+<font color="red">     9:<font color="black">..........</font><font size="-2">[EOL]</font></font>
+<font color="red">    10:<font color="black">..*....*.*</font><font size="-2">[EOL]</font></font>
+<font color="red">    11:<font color="black">4  9 9 5 8</font><font size="-2">[EOL]</font></font>
+<font color="red">    12:<font color="black">3  9 2 3</font><font size="-2">[EOL]</font></font>
+<font color="red">    13:<font color="black">8  2 3 4 5 6 7 8 9</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</p>
+</ul>
+<h4>
+    OUTPUT: <font color="blue"><tt>prob7.out</tt></font>
+</h4>
+<ul>
+  <p>Other than the standard header and trailer messages, each line of the
+output file contains the placement of one plank to a specific stump, as shown
+in the sample output below. (Use the exact same wording and formating for
+your output file.) The plank order given by the output file should take you
+from stump (1,1) to stump (10,10). If no solution is possible with the specified
+planks, print &quot;<i>no solution possible</i>.&quot; Print a single blank line after
+each problem solution.</p>
+                                                                   
+  <p>One correct output corresponding to the example input file above would 
+        be</p>
+<tt><pre>
+<font color="red">       column   111111111122222222223</font>
+<font color="red">       123456789012345678901234567890</font>
+<font color="red">line 1:<font color="black">Program 7 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">place plank 1 to stump (1,10)</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">place plank 2 to stump (10,10)</font><font size="-2">[EOL]</font></font>
+<font color="red">     4:<font color="black"></font><font size="-2">[EOL]</font></font>
+<font color="red">     5:<font color="black">no solution possible</font><font size="-2">[EOL]</font></font>
+<font color="red">     6:<font color="black"></font><font size="-2">[EOL]</font></font>
+<font color="red">     7:<font color="black">place plank 3 to stump (1,5)</font><font size="-2">[EOL]</font></font>
+<font color="red">     8:<font color="black">place plank 4 to stump (1,10)</font><font size="-2">[EOL]</font></font>
+<font color="red">     9:<font color="black">place plank 8 to stump (10,10)</font><font size="-2">[EOL]</font></font>
+<font color="red">    10:<font color="black"></font><font size="-2">[EOL]</font></font>
+<font color="red">    11:<font color="black">End of program 7 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</ul>
+</body>
+</html>

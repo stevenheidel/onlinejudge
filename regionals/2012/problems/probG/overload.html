@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Problem G: Function Overloading</title>
+<style type="text/css"><!--
+html { margin-left: 4em; }
+h1 { margin-left: -2em; font-size: 14pt; }
+tt,pre { font-weight: bold; font-size: 12pt; }
+.image { text-align: center; border: 1px solid black; margin: 1em; }
+.left { float: left; }
+.right { float: right; }
+.break { page-break-before: always; }
+--></style>
+</head><body>
+<h1>Problem G: Function Overloading</h1>
+
+<br/><b>Source:</b> <tt>overload.{c,cpp,java}</tt>
+<p>
+Many programming languages (including C, C++ and Java) allow the programmer to define overloaded functions, i.e., several functions that have the same name but different parameter lists. However, in some languages (such as Ada) it is possible to overload by return type as well. That is, it is possible for two functions to have the same name and parameter list, but different return types. For example:
+</p>
+
+<pre>
+      char f(float x, int y)
+      char f(float x, float y)
+      float f(float x, float y)
+      float g(float x, int y)
+      float g(int x, float y)
+</pre>
+
+<p>
+Given these function declarations, suppose the program contains the following variable declarations and function call:
+</p>
+
+<pre>
+      float a = 1.0, b = 2.0;
+      int c = 3;
+      float d = g(c, f(a, b));
+    </pre>
+
+<p>
+The first two declarations of f would not work here, but the third one does: <tt>f(&lt;float&gt;, &lt;float&gt;)</tt> returns <tt>&lt;float&gt;</tt>, which reduces the function call to <tt>g(&lt;int&gt;, &lt;float&gt;)</tt>, and the second declaration of <tt>g</tt> will return the <tt>&lt;float&gt;</tt> that can be assigned to variable <tt>d</tt>. Since we used the 3rd version of <tt>f</tt> and the 2nd version of <tt>g</tt>, we say that the given function call is resolved by
+</p>
+
+<pre>
+      d = g2(c, f3(a, b)).
+    </pre>
+
+<p>
+Using the same declarations, the function call <tt>c = g(a, f(a, c))</tt> cannot be resolved. As a final example, consider the function declarations
+</p>
+
+<pre>
+      float x(float w)
+      int x(float w)
+      char y(float v)
+      char y(int v)
+    </pre>
+<p>
+and the variable declaration and function call
+</p>
+<pre>
+      float a = 1.0;
+      char c = y(x(a));
+    </pre>
+<p>
+In this case, we see that the resolution of the given function call is ambiguous.
+</p>
+<h1 class="break">Input</h1>
+
+<p>
+The input will consist of a list of function declarations (one per line). Each function declaration in the input will have the form
+</p>
+<pre>
+      name num_params param(1) param(2) ... param(num_params) rettype
+    </pre>
+<p>
+where <tt>name</tt> is the function name, <tt>param(i)</tt> is the data type of the i-th parameter, and rettype is the data type of the return value (this problem does not deal with 'void' functions); <tt>num_params</tt> is at least 1 and at most 9. Note that the parameters do not have names, it is only their data types that matter. Function names are single lower case letters, while data types are single upper case letters. Different functions with the same name will appear consecutively in the input, and there are at most 500 different functions for each function name. No two function declarations will be exactly the same.
+Each function declaration carries with it, implicitly, a 'serial number'. The serial numbers start out at 1 and increase until a new function name is encountered; then they start out at 1 again.
+</p>
+
+<p>
+The list of function declarations in the input will be concluded by a line containing only a pound sign ('#'). Thereafter will come a list of function calls (one per line).
+</p>
+
+<p>
+The structure of each function call can be defined by the grammar:
+</p>
+
+<pre>
+  &lt;function_call&gt; := &lt;data_type&gt; = &lt;right_hand_side&gt;
+  &lt;right_hand_side&gt; := &lt;fname&gt; &lt;num_params&gt; &lt;param_list&gt;
+  &lt;param_list&gt; := &lt;param&gt; | &lt;param_list&gt; &lt;param&gt;
+  &lt;param&gt; := &lt;data_type&gt; | &lt;right_hand_side&gt;
+  &lt;data_type&gt; := &lt;upper_case_letter&gt;
+  &lt;num_params&gt; := '1' | '2' | ... | '9'
+  &lt;fname&gt; := &lt;lower_case_letter&gt;
+</pre>
+
+<p>
+Here the symbols <tt>:=</tt> and <tt>|</tt> are used to define the grammar, they will not show up in the actual function call. Furthermore, in any function call the specified num_params will match exactly the number of parameters given in the parameter list. Each function call will contain no more than 500 function names (not necessarily distinct).
+The end of the list of function calls will be marked by a line containing only a pound sign.
+In each function declaration, as well as in each function call in the input, adjacent tokens (lower or upper case letters, digits, equals sign) will be separated by exactly one blank space.
+</p>
+
+<h1>Output</h1>
+<p>
+For each function call in the input, there will be one line of output. If the function call can be resolved uniquely, the output will be the same as the input function call, but each function name will have a serial number appended to it, to indicate which version of the function was used there. Otherwise, the output will be either 'impossible' or 'ambiguous', as explained above. If it is ambiguous, also output the number of ways the function call can be resolved, or print '&gt; 1000' if there are more than 1000 ways.
+</p>
+
+<h1 class="break">Sample Input</h1>
+<pre>
+f 2 A B C
+f 2 A A C
+f 2 A A A
+g 2 A B A
+g 2 B A A
+x 1 A A
+x 1 A B
+y 1 A C
+y 1 B C
+h 2 A B E
+h 2 C D F
+k 2 E F A
+#
+A = g 2 B f 2 A A
+B = g 2 A f 2 A B
+C = y 1 x 1 A
+A = k 2 h 2 A B h 2 C D
+#
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+A = g2 2 B f3 2 A A
+impossible
+ambiguous 2
+A = k1 2 h1 2 A B h2 2 C D
+</pre>
+</body>
+</html>

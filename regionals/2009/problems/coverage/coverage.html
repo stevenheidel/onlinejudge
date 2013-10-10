@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem B: Problem B: Coverage</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+   --></style>
+  </head><body>
+    <h1>Problem B: Problem B: Coverage</h1>
+
+    <br/><b>Source:</b> <tt>coverage.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>
+A cell phone user is travelling along a line segment with end points having integer coordinates. In order for the user to have cell phone coverage, it must be within the transmission radius of some transmission tower. As the user travels along the path, cell phone coverage may be gained (or lost) as the user moves inside the radius of some tower (or outside of the radii of all towers). Given the location of up to 100 towers and their transmission radii, you are to compute the percentage of cell phone coverage the user has along the specified path. The (x,y) coordinates are integers between -100 and 100, inclusive, and the tower radii are integers between 1 and 100, inclusive.
+</p>
+
+<h1>Input</h1>
+
+<p>
+Your program will be given a sequence of configurations, one per line, of the form:
+</p>
+
+<pre>
+N C0X C0Y C1X C1Y T1X T1Y T1R T2X T2Y T2R ...
+</pre>
+
+<p>
+Here, <tt>N</tt> is the number of towers, <tt>(C0X,C0Y)</tt> is the start of path of the
+cell phone user, <tt>(C1X,C1Y)</tt> is the end of the path, <tt>(TkX,TkY)</tt> is the
+position of the kth tower, and <tt>TkR</tt> is its transmission radius. The
+start and end points of the paths are distinct.
+</p>
+
+<p>
+The last problem is terminated by the line
+</p>
+<pre>
+0
+</pre>
+
+<h1>Output</h1>
+
+<p>
+For each configuration, output one line containing the percentage of
+coverage the cell phone has, rounded to two decimal places.
+</p>
+
+<h1>Sample Input</h1>
+
+<pre>
+3 0 0 100 0 0 0 10 5 0 10 15 0 10
+1 0 0 100 0 40 10 50
+0
+</pre>
+
+<h1>Sample Output</h1>
+
+<pre>
+25.00
+88.99
+</pre>
+
+</body>
+</html>

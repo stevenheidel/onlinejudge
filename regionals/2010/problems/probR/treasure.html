@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem R: Treasure</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+ </head><body>
+    <h1>Problem R: Treasure</h1>
+
+    <br/><b>Source:</b> <tt>treasure.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<div class="image right">
+  <img src="treasure1.jpg" alt="family tree" />
+  <p><b>Figure&nbsp;1</b>: Example family tree.</p>
+</div>
+
+<p>Distribute an inheritance among the heirs.</p>
+
+<p>A rich person buries a treasure chest in their back yard and
+dies. Years (perhaps generations) later, the chest is unearthed, its
+contents are sold, and the proceeds are distributed among the living
+descendants. To this end, a family tree is drawn. The family tree
+starts with the originator (who buried the treasure) and traces the
+genealogy down to the currently living descendents.</p>
+
+<p>
+Any person <tt>X</tt> who appears in the family tree along with one or
+more descendants, is deceased. The share of the inheritance of any
+such person <tt>X</tt> is divided equally among those children of
+<tt>X</tt> who are either currently living or produced (directly or
+indirectly) currently living descendants. (Any deceased descendants of
+the originator who did not produce further descendants are omitted
+from the family tree.)
+</p>
+
+<p>Any person <tt>Y</tt> who is shown in the family tree without descendants,
+is a currently living descendant. Your goal is to determine the
+fractional share of the inheritance for each such person <tt>Y</tt>. The sum of
+the shares must of course equal 1. (Such a person <tt>Y</tt> may in reality
+have some living descendants, but they will not be shown in the family
+tree.)
+</p>
+
+<p>
+Consider, for example, the family tree of <b>figure&nbsp;1</b>.  The originator is Judith. The currently living descendants (shown
+without children in the family tree) are Dick, Cathy, Maggie, Carl,
+and Bob. Their respective shares of the inheritance are: 1/3, 1/6,
+1/12, 1/12 and 1/3.
+</p>
+
+<h1 class="break">Input</h1>
+
+<p>The input will contain data for a number of problem instances. For
+each problem instance, the input will represent a family tree on one
+or more lines. The first problem instance in the sample input (below)
+corresponds to the family tree of Figure 1.</p>
+
+<p>The first line will begin with the name of the originator, followed
+by a list of the originator’s children (there will be at least
+one).</p>
+
+<p>There will be one additional line for each deceased
+descendant. Each of those lines will begin with the name of the
+deceased descendant, followed by the list of his or her children.</p>
+
+<p>Each problem instance will be terminated with a line containing a
+single asterisk (<tt>*</tt>). The input will be terminated with a line containing
+two asterisks.</p>
+
+<p>Notes:</p>
+<ul>
+  <li>A name consists of upper / lower case letters.</li>
+  <li>Names are delimited by (one or more) blank spaces.</li>
+  <li>No name will occur more than once in the family tree for one
+  problem instance.</li>
+</ul>
+
+
+<h1>Output</h1>
+
+<p>For each problem instance, the output will consist of the list of
+living descendants from the family tree, one name per line. Each name
+will be followed by a colon, one blank space, and the corresponding
+fractional share of the inheritance, in the form <tt>1/N</tt>.</p>
+
+<p>You may assume the input will be such that this <tt>N</tt> will be
+within the bounds of 32-bit (signed) integer variables.</p>
+
+<p>The names will be listed in the same order in which they appear in the
+input.</p>
+
+<p>The output will not contain any blank spaces, except the one blank
+space following each colon.</p>
+
+<p>Each problem instance will be followed by a line of 20 hyphens (<tt>-</tt>).</p>
+
+<h1 class="break">Sample input</h1>
+<pre>
+Judith Dick Ethel Linda
+Ethel Cathy Jack 
+Jack Maggie Carl
+Linda Bob
+*
+Bill Jill
+*
+Jackie Rod Sarah
+Rod Albert
+Albert Carol Susie Max
+*
+**
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+Dick: 1/3
+Cathy: 1/6
+Maggie: 1/12
+Carl: 1/12
+Bob:  1/3
+-------------------
+Jill: 1/1
+-------------------
+Sarah: 1/2
+Carol: 1/6
+Susie: 1/6
+Max: 1/6
+-------------------
+</pre>
+
+
+</body>
+</html>

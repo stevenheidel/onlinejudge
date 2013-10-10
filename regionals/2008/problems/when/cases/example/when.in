@@ -1,0 +1,7 @@
+When ($Mr. Bill$<5)
+   Set $mr._bill$=($mr.  bill$+1),$Y$=($Y$+10)
+End When
+When ($mr. Bill$<10)
+  Set $MR. BILL$=($mr. bill$+1)
+  Print $mr. bill$,$Y$
+End When

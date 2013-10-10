@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem C: Chain Code</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+</head><body>
+    <h1>Problem C: Chain Code</h1>
+
+    <br/><b>Source:</b> <tt>chaincode.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>In a black and white (bi-level) image, collections of connected black
+pixels can be defined as foreground or objects, while white can be
+thought of as background. Each set of connected black pixels can be
+completely described by listing the positions of the pixels on its
+boundary in counterclockwise order, starting at some arbitrary point
+on the boundary. This list of pixels can, in turn, be represented
+simply as the direction to the next one in the list. This list of
+directions is called the chain code of the object, and describes the
+shape of the object precisely while being position independent.</p>
+
+<p>There are 8 possible directions from one pixel to an adjacent
+pixel, and while assigning these numbers is arbitrary,
+<b>figure&nbsp;1</b> shows the standard convention. The direction 0
+means "to the right of", 2 "means immediately above", and 1 is at 45
+degrees, bisecting 0 and 2, and so on.</p>
+
+<p>Two black pixels are considered to be adjacent if the square of the
+distance between them is less than or equal to 2. This is based on a
+standard graphics coordinate system having a pixel at each integer
+coordinate. Two pixels are connected if a contiguous path of adjacent
+pixels can be traced between them. A connected region is a set of
+black pixels in which all members are connected to each other. A
+boundary pixel of a connected region (from now on just a region) is a
+pixel within the region that has at least one neighbor (in the four
+compass directions) that is not black. For this problem, you may
+assume that there are no “holes” in the region, so that there is only
+one boundary of the region.</p>
+
+<p>The chain code of a region can start at any pixel on the
+boundary. It proceeds by finding the next adjacent pixel on the
+boundary in a counter-clockwise direction, saving the direction (0-7)
+in an output buffer, and then continuing the process from the new
+pixel. When we arrive at the starting pixel again, the chain code is
+complete. The output buffer contains a set of direction values which
+comprise the chain code itself, and from which the original set of
+pixels can be recreated starting at any pixel position in an
+image.</p>
+
+<p>As an example, a chain code for the region in <b>figure&nbsp;2</b> is
+<tt>446567001232</tt>. The chain code describes the shape of the region
+unambiguously, although its position is completely unknown. Shape
+related measures such as perimeter and area (number of pixels in the
+region) can be determined directly from the chain code description
+alone. You are to write a program that calculates the area of a
+connected region given only the chain code.</p>
+
+<h1 class="break">Input</h1>
+
+<p>The input will be a collection of chain code strings, one per
+line. Each chain code contains at most 1000000 characters. You may
+assume that each chain code describes a valid region, and does not
+describe a boundary that intersects itself.</p>
+
+<h1>Output</h1>
+
+<p>For each chain code in the input, the output will be the area of
+the region (i.e. the number of pixels belonging to it), each printed
+on its own line.</p>
+
+<div class="left image">
+  <img src="chaincode1.jpg" alt="directions" />
+  <p><b>Figure&nbsp;1</b>: Directions.</p>
+</div>
+
+<h1 style="clear: both;" class="break">Sample input</h1>
+<pre>
+446567001232
+6024
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+19
+4
+</pre>
+
+<div class="left image">
+  <img src="chaincode2.jpg" alt="area" />
+  <p><b>Figure&nbsp;2</b>: Example area.</p>
+</div>
+
+</body>
+</html>

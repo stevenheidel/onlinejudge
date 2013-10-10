@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Problem E: Dance</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+    --></style>
+  </head><body>
+    <h1>Problem E: Dance</h1>
+
+    <br><b>Source:</b> <tt>dance.{c,cpp,java}</tt>
+    <br><b>Input:</b> <tt>dance.in</tt>
+    <br><b>Output:</b> <tt>dance.out</tt>
+
+<p>For a dance to be proper in the Altered Culture of Machinema, it must abide by the following rules:
+</p><ol>
+<li>A dip can only appear 1 or 2 steps after a jiggle, or before a twirl, as in:
+<ul>
+<li>...jiggle dip...</li>
+<li>...jiggle stomp dip...</li>
+<li>...dip twirl...</li>
+</ul>
+</li><li>All dances end with a clap stomp clap.</li>
+<li>If a dance contains a twirl, it must have a hop.</li>
+<li>No dance can start with a jiggle.</li>
+<li>All dances must have a dip.</li>
+</ol>
+
+<p>As instructor at a dance composition school, you must grade many
+freshman attempts at composing dances. You decide to make an automatic
+grader that can check against these rules.</p>
+    <h1>Input</h1>
+    <p>The input consists of a number of dances, one per line.  Each
+    dance has a maximum of 1000 steps. Each step is separated by a
+    single space, and all steps are lowercase alphabetic words at most
+    100 letters long.</p>
+
+    <h1>Output</h1>
+    <p></p>
+<p>If a dance in the input has no mistakes, then the output should
+contain the words "form ok: " followed by the original composition.</p>
+
+<p>If a dance has a single type of form error, then the output should
+contain the words "form error K: " where K is the rule which failed,
+followed by the composition.</p>
+
+<p>If a dance has multiple types of form errors, then the output should
+contain the errors as a comma separated clause, as in "form errors
+K(1), K(2), ..., K(N-1) and K(N): " where the form errors are in
+increasing order, followed by the composition.</p>
+
+<p>If a dance has form error 1, every dip in the dance that violates rule 1 should be printed in upper case.</p>
+    <h1>Sample Input</h1>
+<pre>dip twirl hop jiggle hop hop clap stomp clap
+dip hop jiggle hop hop clap stomp clap
+dip twirl hop jiggle hop hop clap clap stomp
+jiggle dip twirl hop jiggle hop hop clap stomp clap
+jiggle dip
+jiggle
+dip twirl hop dip jiggle hop dip hop clap stomp clap
+</pre>
+
+    <h1>Sample Output</h1>
+<pre>form ok: dip twirl hop jiggle hop hop clap stomp clap
+form error 1: DIP hop jiggle hop hop clap stomp clap
+form error 2: dip twirl hop jiggle hop hop clap clap stomp
+form error 4: jiggle dip twirl hop jiggle hop hop clap stomp clap
+form errors 2 and 4: jiggle dip
+form errors 2, 4 and 5: jiggle
+form error 1: dip twirl hop DIP jiggle hop dip hop clap stomp clap
+</pre>
+  </body></html>

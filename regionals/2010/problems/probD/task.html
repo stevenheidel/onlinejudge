@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem D: Task</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+</head><body>
+    <h1>Problem D: Task</h1>
+
+    <br/><b>Source:</b> <tt>task.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>In most recipes, certain tasks have to be done before others. For
+each task, if we are given a list of other tasks that it depends on,
+then it is relatively straightforward to come up with a schedule of
+tasks that satisfies the dependencies and produces a stunning
+dish. Many of us know that this can be solved by some algorithm called
+toplogical sort.</p>
+
+<p>But life is not so easy sometimes. For example, here is a recipe for making pizza dough:</p>
+
+<ol>
+  <li>Mix the yeast with warm water, wait for 5 to 10 minutes.</li>
+  <li>Mix the the remaining ingredients 7 to 9 minutes.</li>
+  <li>Mix the yeast and the remaining ingredients together for 10 to 15 minutes.</li>
+  <li>Wait 90 to 120 minutes for the dough to rise.</li>
+  <li>Punch the dough and let it rest for 10 to 15 minutes.</li>
+  <li>Roll the dough.</li>
+</ol>
+<p>In this case, tasks 1 and 2 may be scheduled after the first minute
+  (we always spend the first minute to read the recipe and come up
+  with a plan). The earliest task 3 may be started is at 8 minutes,
+  and task 4 may start at 18 minutes after the start, and so on. This
+  recipe is relatively simple, but if some tasks have many dependent
+  tasks then scheduling can become unmanageable. Sometimes, the recipe
+  may in fact be impossible to execute. For example, consider the
+  following abstract recipe:</p>
+<ol>
+  <li>task 1</li>
+  <li>after task 1 but within 2 minutes of it, do task 2</li>
+  <li>at least 3 minutes after task 2 but within 2 minutes of task 1, do
+  task 3</li>
+</ol>
+<p>In this problem, you are given a number of tasks. Some tasks are
+  related to another based on their starting times. You are asked to
+  assign a starting time to each task to satisfy all constraints if
+  possible, or report that no valid schedule is possible.</p>
+
+<h1 class="break">Input</h1>
+
+<p>The input consists of a number of cases. The first line of each
+case gives the number of tasks <tt>n</tt>, (<tt>1 &le; n &le;
+100</tt>). This is followed by
+a line containing a non-negative integer <tt>m</tt> giving the number of
+constraints. Each of the next <tt>m</tt> lines specify a
+constraint. The two possible forms of constraints are:</p> 
+<pre>
+task i starts at least A minutes later than task j
+task i starts within A minutes of the starting time of task j
+</pre>
+<p>where <tt>i</tt> and <tt>j</tt> are the task numbers of two
+different tasks (<tt>1 &le; i, j &le; n</tt>), and <tt>A</tt> is a
+non-negative integer (<tt>A &le; 150</tt>). The first form states that
+task <tt>i</tt> must start at least <tt>A</tt> minutes later than the
+start time of task <tt>j</tt>. The second form states that task
+<tt>i</tt> must start no earlier than task <tt>j</tt>, and within
+<tt>A</tt> minutes of the starting time of task <tt>j</tt>. There may
+be multiple constraints involving the same pair of tasks. Note that
+<tt>at least</tt> and <tt>within</tt> include the end points (i.e. if task 1 starts
+at 1 minute and task 2 starts at 4 minutes, then task 2 starts at
+least 3 minutes later than task 1, and within 3 minutes of the
+starting time of task 1).</p>
+
+<p>The input is terminated by <tt>n = 0</tt>.</p>
+
+<h1>Output</h1>
+
+<p>For each case, output a single line containing the starting times
+of task 1 through task n separated by a single space. Each starting
+time should specify the minute at which the task starts. The starting
+time of each task should be positive and less than 1000000. There may
+be many possible schedules, and any valid schedule will be
+accepted. If no valid schedule is possible, print <tt>Impossible.</tt>
+on a line instead.</p>
+
+<h1 class="break">Sample input</h1>
+<pre>
+6
+10
+task 3 starts at least 5 minutes later than task 1
+task 3 starts within 10 minutes of the starting time of task 1
+task 3 starts at least 7 minutes later than task 2
+task 3 starts within 9 minutes of the starting time of task 2
+task 4 starts at least 10 minutes later than task 3
+task 4 starts within 15 minutes of the starting time of task 3
+task 5 starts at least 90 minutes later than task 4
+task 5 starts within 120 minutes of the starting time of task 4
+task 6 starts at least 10 minutes later than task 5
+task 6 starts within 15 minutes of the starting time of task 5
+3
+4
+task 2 starts at least 0 minutes later than task 1
+task 2 starts within 2 minutes of the starting time of task 1
+task 3 starts at least 3 minutes later than task 2
+task 3 starts within 2 minutes of the starting time of task 1
+0
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+3 1 8 18 108 118
+Impossible.
+</pre>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Problem B: Lawrence of Arabia</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+    --></style>
+  </head><body>
+    <h1>Problem B: Lawrence of Arabia</h1>
+
+    <br><b>Source:</b> <tt>lawrence.{c,cpp,java}</tt>
+    <br><b>Input:</b> <tt>lawrence.in</tt>
+    <br><b>Output:</b> <tt>lawrence.out</tt>
+
+<p>T. E. Lawrence was a controversial figure during World War I. He
+was a British officer who served in the Arabian theater and led a
+group of Arab nationals in guerilla strikes against the Ottoman
+Empire. His primary targets were the railroads. A highly fictionalized
+version of his exploits was presented in the blockbuster movie,
+"Lawrence of Arabia".</p>
+
+<p>
+You are to write a program to help Lawrence figure out how to best use
+his limited resources. You have some information from British
+Intelligence. First, the rail line is completely linear---there are
+no branches, no spurs. Next, British Intelligence has assigned a
+Strategic Importance to each depot---an integer from 1 to 5. A
+depot is of no use on its own, it only has value if it is connected to
+other depots. The Strategic Value of the entire railroad is calculated
+by adding up the products of the Strategic Values for every pair of
+depots that are connected, directly or indirectly, by the rail
+line. Consider this railroad:
+</p>
+<center>
+<img src="lawrence1.png" width="545" height="49" >
+</center>
+<p>
+Its Strategic Value is 4*5 + 4*1 + 4*2 + 5*1 + 5*2 + 1*2 = 49.
+</p>
+
+<p>
+Now, suppose that Lawrence only has enough resources for one
+attack. He cannot attack the depots themselves---they are too well
+defended. He must attack the rail line between depots, in the middle
+of the desert. Consider what would happen if Lawrence attacked this
+rail line right in the middle:
+</p>
+<center>
+<img src="lawrence2.png" width="545" height="81">
+</center>
+<p>
+The Strategic Value of the remaining railroad is 4*5 + 1*2 = 22. But,
+suppose Lawrence attacks between the 4 and 5 depots:
+</p>
+<center>
+<img src="lawrence3.png"  width="545" height="81">
+</center>
+<p>
+The Strategic Value of the remaining railroad is 5*1 + 5*2 + 1*2 =
+17. This is Lawrence's best option.
+</p>
+
+<p>
+Given a description of a railroad and the number of attacks that
+Lawrence can perform, figure out the smallest Strategic Value that he
+can achieve for that railroad.
+</p>
+
+    <h1>Input</h1>
+    <p>
+There will be several data sets. Each data set will begin with a line
+with two integers, <var>n</var> and <var>m</var>.  <var>n</var> is the
+number of depots on the railroad (1≤<var>n</var>≤1000), and
+<var>m</var> is the number of attacks Lawrence has resources for
+(0≤<var>m</var>&lt;<var>n</var>). On the next line will be
+<var>n</var> integers, each from 1 to 5, indicating the Strategic
+Value of each depot in order. End of input will be marked by a line
+with <var>n</var>=0 and <var>m</var>=0, which should not be processed.
+</p>
+
+    <h1>Output</h1>
+    <p>For each data set, output a single integer, indicating the
+    smallest Strategic Value for the railroad that Lawrence can
+    achieve with his attacks. Output each integer in its own line.
+</p>
+
+
+    <h1>Sample Input</h1>
+
+<pre>4 1
+4 5 1 2
+4 2
+4 5 1 2
+0 0
+</pre>
+
+    <h1>Sample Output</h1>
+<pre>17
+2
+</pre>
+  </body></html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem F: Problem F: Resistors</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+   --></style>
+  </head><body>
+    <h1>Problem F: Problem F: Resistors</h1>
+
+    <br/><b>Source:</b> <tt>resistors.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>
+Every electrical appliance (such as a light bulb) has a certain resistance. If the appliance is connected to a given voltage, the higher its resistance, the lower the current flowing through the appliance. The unit of measurement for resistance is the ohm. In order to avoid round-off errors that can affect floating-point numbers, we will use rational numbers (quotients of positive integers) to represent the resistance of an appliance numerically.
+</p>
+
+<p>
+There are two basic ways to connect two or more appliances into a configuration of appliances: serially (Figure 1) or parallel (Figure 2).
+</p>
+
+<p>
+Two or more configurations can be further connected serially or parallel to yield another (more complex) configuration yet, and this process of building more complex configurations from existing ones can be repeated any number of times (Figure 3).
+</p>
+
+<p>
+In general, a configuration is either a single appliance, or a serial connection of two or more configurations, or a parallel connection of two or more configurations.
+</p>
+
+<p>
+The resistance of a configuration of resistors can be computed according to the following two rules:
+</p>
+<ol>
+  <li>The resistance of a serial configuration is the sum of the resistances of its component configurations.</li>
+  <li>The resistance of a parallel configuration is the reciprocal of the sum of the reciprocals of its component configurations.</li>
+</ol>
+
+<img src="resistors1.jpg" alt="resistors in series and parallel" />
+<p>
+In Figure 1, the resistance of the configuration is 3/2 + 3/4 + 1/4 = 5/2 ohm.
+</p>
+
+<p>
+In Figure 2, the resistance of the configuration is 1/(1/(3/2) + 1/(1/2) + 1/ (1/4)) = 3/20 ohm
+</p>
+
+<img src="resistors2.jpg" alt="complex resistor network" />
+<p>
+In Figure 3, we first calculate
+1/(1/(1/2) + 1/(2/3)) + 2/5 = 24/35 and 1/2 + 1/(1/(2/3) + 1/(2/5)) + 3/2 = 9/4.
+Adding the reciprocals of these two values and reciprocating the result, we get 72/137 ohm.
+</p>
+
+<p>
+A configuration can be represented in text format.
+</p>
+<ul>
+  <li>A single appliance is represented by the numerical value of its resistance (without enclosing parentheses).</li>
+<li>A configuration that is the serial connection of several configurations is represented as a list of the representations of its components, separated by the ampersand character ("&amp;") and enclosed in a pair of parentheses.</li>
+<li>A configuration that is the parallel connection of several configurations is represented as a list of the representations of its components, separated by the vertical bar character ("|") and enclosed in a pair of parentheses.</li>
+</ul>
+
+<p>
+Thus, figures 1, 2, and 3 are represented in text format by the respective expressions:
+</p>
+<pre>
+(3/2 &amp; 3/4 &amp; 1/4)
+(3/2 | 1/2 | 1/4)
+(((1/2 | 2/3) &amp; 2/5) | (1/2 &amp; (2/3 | 2/5) &amp; 3/2))
+</pre>
+
+<h1 style="page-break-before: always;">Input</h1>
+<p>
+The input consists of a number of test cases, one test case per line. Each line of the input contains a valid expression that defines a configuration according to the rules stated above. The resistance values of the appliances will be positive rational numbers, in the form <tt>NUMERATOR/DENOMINATOR</tt>. There will be one blank space on each side of every ampersand or vertical bar. There will be no other blank spaces in the expression.
+</p>
+
+<h1>Output</h1>
+
+<p>
+For each test case, print the resistance of the configuration on a new line, in the form <tt>NUMERATOR/DENOMINATOR</tt>, with all common factors of <tt>NUMERATOR</tt> and <tt>DENOMINATOR</tt> cancelled. Do not print any blank spaces.
+</p>
+
+<h1>Sample Input</h1>
+<pre>
+15/1
+(3/2 &amp; 3/4 &amp; 1/4)
+(3/2 | 1/2 | 1/4)
+((1/2 | 2/3) &amp; 2/5)
+(1/2 &amp; (2/3 | 2/5) &amp; 3/2)
+(((1/2 | 2/3) &amp; 2/5) | (1/2 &amp; (2/3 | 2/5) &amp; 3/2))
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+15/1
+5/2
+3/20
+24/35
+9/4
+72/137
+</pre>
+</body>
+</html>

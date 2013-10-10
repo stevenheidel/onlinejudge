@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem C: Problem C: XML</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+   --></style>
+  </head><body>
+    <h1>Problem C: Problem C: XML</h1>
+
+    <br/><b>Source:</b> <tt>xml.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>
+In this problem, you are asked to determine if a given document satisfies the syntax of an XML-like language.
+</p>
+
+<p>
+A simple XML-like document can be parsed as a sequence of the
+following:
+</p>
+<ol>
+  <li>Plain text---ASCII codes between 32 and 127 (inclusive), with none of the following symbols: <tt>&lt;</tt>, <tt>&gt;</tt>, <tt>&amp;</tt></li>
+  <li>The sequences:
+  <ul>
+    <li><tt>&amp;lt;</tt></li>
+    <li><tt>&amp;gt;</tt></li>
+    <li><tt>&amp;amp;</tt></li>
+  </ul>
+  These encode a <tt>&lt;</tt>, <tt>&gt;</tt>, or <tt>&amp;</tt> respectively.</li>
+  <li><tt>&amp;xHEX;</tt> HEX must be any even (positive) number of upper or lower case hexadecimal digits, and this represents the bytes given.</li>
+  <li><tt>&lt;tag&gt;</tt> Tag can be any lowercase alphanumeric string. This tag is pushed onto the context stack.</li>
+  <li><tt>&lt;tag/&gt;</tt> This tag is not pushed onto the context stack (there is no closing context).</li>
+  <li><tt>&lt;/tag&gt;</tt> This tag removes the <tt>&lt;tag&gt;</tt>
+  context from the stack, which must be topmost on the stack.</li>
+</ol>
+
+<p>
+By the time the entire document is parsed, the context stack is empty for a valid document. We should also note that
+the empty string is considered valid.
+</p>
+
+<h1>Input</h1>
+
+<p>
+You will be given a number of documents to process. Each document is given as one line of text which may be empty. The input is terminated by the end of file.
+</p>
+
+<h1>Output</h1>
+
+<p>
+For each document given, print <tt>valid</tt> on a single line if it is a
+valid XML-like document, or <tt>invalid</tt> otherwise.
+</p>
+
+<h1 style="page-break-before: always;">Sample Input</h1>
+<pre>
+the quick brown fox.
+the &lt;i&gt;&lt;b&gt;quick&lt;/b&gt; brown&lt;/i&gt; fox.
+&lt;doc&gt;fox &amp;amp; socks.&lt;/doc&gt;
+3x+5&amp;gt;7
+Null: &amp;x00;
+&lt;doc&gt;the quick brown fox.
+the &lt;i&gt;quick &lt;b&gt;brown&lt;/i&gt;&lt;/b&gt; fox
+fox &amp; socks.
+3x+5&gt;7
+Null: &amp;x0;
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+valid
+valid
+valid
+valid
+valid
+invalid
+invalid
+invalid
+invalid
+invalid
+</pre>
+</body>
+</html>

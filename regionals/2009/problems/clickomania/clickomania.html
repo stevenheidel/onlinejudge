@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem D: Problem D: Clickomania</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+   --></style>
+  </head><body>
+    <h1>Problem D: Problem D: Clickomania</h1>
+
+    <br/><b>Source:</b> <tt>clickomania.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>
+Clickomania is a puzzle in which one starts with a rectangular grid of
+cells of different colours. In each step, a player selects ("clicks")
+a cell. All connected cells of the same colour as the selected cell
+(including itself) are removed if the selected cell is connected to at
+least one other cell of the same colour. The resulting "hole" is
+filled in by adjacent cells based on some rule, and the object of the
+game is to remove all cells in the grid.
+</p>
+
+<p>
+In this problem, we are interested in the one-dimensional version of
+the problem. The starting point of the puzzle is a string of colours
+(each represented by an uppercase letter). At any point, one may
+select (click) a letter provided that the same letter occurs before or
+after the one selected. The substring of the same letter containing
+the selected letter is removed, and the string is shortened to remove
+the hole created. To solve the puzzle, the player has to remove all
+letters and obtain the empty string. If the player obtains a non-empty
+string in which no letter can be selected, then the player loses.
+</p>
+
+<p>
+For example, if one starts with the string "ABBAABBAAB", selecting the first "B" gives "AAABBAAB". Next, selecting the last "A" gives "AAABBB". Selecting an "A" followed by a "B" gives the empty string. On the other hand, if one selects the third "B" first, the string "ABBAAAAB" is obtained. One may verify that regardless of the next selections, we obtain either the string "A" or the string "B" in which no letter can be selected. Thus, one must be careful in the sequence of selections chosen in order to solve a puzzle. Furthermore, there are some puzzles that cannot be solved regardless of the choice of selections. For example, "ABBAAAAB" is not a solvable puzzle.
+</p>
+
+<p>
+Some facts are known about solvable puzzles:
+</p>
+<ul>
+  <li>The empty string is solvable.</li>
+  <li>If <tt>x</tt> and <tt>y</tt> are solvable puzzles, so are
+  <tt>xy</tt>, <tt>AxA</tt>, and <tt>AxAyA</tt> for any uppercase
+  letter <tt>A</tt>.</li>
+  <li>All other puzzles not covered by the rules above are
+  unsolvable.</li>
+</ul>
+<p>
+Given a puzzle, your task is to determine whether it can be solved or
+not.
+</p>
+
+<h1 style="page-break-before: always;">Input</h1>
+
+<p>
+Each case of input is specified by a single line. Each line contains a string of uppercase letters. Each string has at least one but no more than 150 characters. The input is terminated by the end of file.
+</p>
+
+<h1>Output</h1>
+
+<p>
+For each input case, print <tt>solvable</tt> on a single line if there is a sequence of selections that solves the puzzle. Otherwise, print <tt>unsolvable</tt> on a line.
+</p>
+
+<h1>Sample Input</h1>
+
+<pre>
+ABBAABBAAB
+ABBAAAAB
+</pre>
+
+<h1>Sample Output</h1>
+
+<pre>
+solvable
+unsolvable
+</pre>
+</body>
+</html>

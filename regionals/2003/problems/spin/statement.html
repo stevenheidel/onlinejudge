@@ -1,0 +1,71 @@
+<html>
+<title>PROB1: SPIN</title>
+<body>
+<h4>PROB1: <font color="blue">SPIN</font>
+</h4>
+<ul>
+        <p>Simulate a locked spinner puzzle.</p>
+     </ul>
+<h4>DESCRIPTION</h4>
+<ul>
+<p>A locked spinner puzzle is a puzzle where you can only change
+  wheels in groups. It is a common puzzle to achieve some value on the
+  spinners with by only changing them in the allowed groups.</p> 
+
+<p>Imagine a row of D numbered wheels, each labeled sequentially with
+the digits 0 through 9. This is similar to what is on a briefcase
+combination lock.</p>
+
+<p>Below this are a series of B buttons with labels that are D digits
+long. For example, D may be 4 and the labels are 1000 1200 1002 0111
+and 0100. Pressing the button labeled 1000 moves the first wheel once,
+but leaves the others alone, while pressing the button labeled 1002
+moves the first wheel once and the fourth wheel twice, leaving the
+center button unchanged.</p> 
+
+<p>Your task is to simulate such a locked spinner puzzle giving the
+final readout of the wheels.</p> 
+</ul>
+<h4>
+    INPUT: <font color="blue"><tt>prob1.dat</tt></font>
+  </h4>
+<ul>
+<p>The input to your program will be a line containing D digits (at most 10)
+representing the starting positions of the wheels. Following this,
+each line will have the button label for which button is pressed
+next.</p> 
+
+<p>An example input file would be
+<tt><pre>
+<font color="red">       column   1</font>
+<font color="red">       1234567890</font>
+<font color="red">line 1:<font color="black">0001</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">1003</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">0206</font><font size="-2">[EOL]</font></font>
+<font color="red">     4:<font color="black">0034</font><font size="-2">[EOL]</font></font>
+<font color="red">     5:<font color="black">1111</font><font size="-2">[EOL]</font></font>
+<font color="red">     6:<font color="black">1003</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</p>
+</ul>
+<h4>
+    OUTPUT: <font color="blue"><tt>prob1.out</tt></font>
+</h4>
+<ul>
+<p>The output file should have the standard header, followed by the
+final positions of the wheels, followed by the standard trailer.</p>
+
+<p>The correct output corresponding to the example input file would be
+<tt><pre>
+<font color="red">       column   111111111122222222223</font>
+<font color="red">       123456789012345678901234567890</font>
+<font color="red">line 1:<font color="black">Program 1 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">3348</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">End of program 1 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</p>
+</ul>
+</body>
+</html>

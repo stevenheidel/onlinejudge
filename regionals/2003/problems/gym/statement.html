@@ -1,0 +1,141 @@
+<html>
+<title>PROB6: GYM</title>
+<body>
+<h4>PROB6: <font color="blue">GYM</font>
+</h4>
+<ul>
+        <p>Model a stochastic gym exercise.</p>
+     </ul>
+<h4>DESCRIPTION</h4>
+<ul>
+<p>An entertaining game for elementary school children in gym class is set up as follows:  
+<ul>
+<li>N baskets are placed at various locations on the gym floor, each with a distinguishing picture on them.</li>
+<li>Each basket contains some index cards.  Each index card has a destination written on them.</li>
+</ul>
+The game proceed as follows: the children gather at a specified start basket.  They each take a turn picking a random card from the basket, memorizing the destination, and returning the card before the next child picks one.  When the teacher blows the whistle, all the children move to the basket indicated on the notecard.</p>
+
+<p>Given the configuration of index cards at each basket, you are to determine the probabiliites a kindergardener will appear at each basket for the first ten steps of the game.</p>
+
+<p>For example, suppose there are four baskets, &quot;tree,&quot; &quot;house,&quot; &quot;car&quot; and &quot;park.&quot;  Each basket has the following index cards:
+<ul>
+<li>The &quot;tree&quot; basket has 2 cards with &quot;tree&quot; on it, 1 card with &quot;house&quot;, and 2 cards with &quot;car.&quot;</li>
+<li>The &quot;house&quot; basket has 1 card with &quot;tree&quot; on it, 1 card with &quot;car&quot; on it, and 2 cards with &quot;park&quot; on it.</li>
+<li>The &quot;car&quot; basket has 1 card with &quot;tree&quot; on it.</li>
+<li>The &quot;park&quot; basket has one of each card in it.</li>
+</ul>
+</p>
+
+<p>This arrangement is summarized by the following table:
+<table border="1">
+<tr>
+<td></td>
+<td colspan="4" align="center"><b>destination</b></td>
+</tr>
+<tr>
+<td><b>basket</b></td>
+<td><b>tree</b></td>
+<td><b>house</b></td>
+<td><b>car</b></td>
+<td><b>park</b></td>
+</tr>
+<tr>
+<td><b>tree</b></td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td><b>house</b></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><b>car</b></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><b>park</b></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+</p>
+
+<p>Everyone starts at the tree, so initially,
+<ul>
+P<sub>0</sub>(tree)=1, and P<sub>0</sub>(else where)=0
+</ul>
+</p>
+
+<p>In the middle of the game, the probablity of being at some new
+location is equal to the sum of the probabilities of being at any
+location on the previous step, times the probablity of moving to the
+destination location from that past location.  For the example,
+<ul>
+P<sub>s+1</sub>(tree)=0.20*P<sub>s</sub>(tree)+0.25*P<sub>s</sub>(house)+1.00*P<sub>s</sub>(car)+0.25*P<sub>s</sub>(park)
+</ul>
+</p>
+</ul>
+<h4>
+    INPUT: <font color="blue"><tt>prob6.dat</tt></font>
+  </h4>
+<ul>
+<p>For N baskets, 2&lt;=N&lt;=10, the input file will contain N lines of
+information.  The N lines will give the index card count as in the
+table for the example above.  There will be at most 10 cards of the
+same name in any given basket, and each basket will contain at least
+one card.  The example data would be given as follows:
+<tt><pre>
+<font color="red">       column   1</font>
+<font color="red">       1234567890</font>
+<font color="red">line 1:<font color="black">2 1 2 0</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">1 0 1 2</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">1 0 0 0</font><font size="-2">[EOL]</font></font>
+<font color="red">     4:<font color="black">1 1 1 1</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</p>
+</ul>
+<h4>
+    OUTPUT: <font color="blue"><tt>prob6.out</tt></font>
+</h4>
+<ul>
+<p>There should be 12 lines of output for any given input.  Other than
+the standard header and footer, you should print out the probabilites
+for seeing a kindergardener at any given basked for the first 10 steps
+in the game.</p>
+
+<p>Your results should give the correct probablities to at least four
+digits of precision. We recommend you do the internal computations
+using double precision arithmetic.  A correct output file
+corresponding to the example data is the following:
+<tt><pre>
+<font color="red">       column   1111111111222222222233333333334</font>
+<font color="red">       1234567890123456789012345678901234567890</font>
+<font color="red">line 1:<font color="black">Program 6 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">     2:<font color="black">1.00000 0.00000 0.00000 0.00000</font><font size="-2">[EOL]</font></font>
+<font color="red">     3:<font color="black">0.40000 0.20000 0.40000 0.00000</font><font size="-2">[EOL]</font></font>
+<font color="red">     4:<font color="black">0.61000 0.08000 0.21000 0.10000</font><font size="-2">[EOL]</font></font>
+<font color="red">     5:<font color="black">0.49900 0.14700 0.28900 0.06500</font><font size="-2">[EOL]</font></font>
+<font color="red">     6:<font color="black">0.54160 0.11605 0.25260 0.08975</font><font size="-2">[EOL]</font></font>
+<font color="red">     7:<font color="black">0.52069 0.13076 0.26809 0.08046</font><font size="-2">[EOL]</font></font>
+<font color="red">     8:<font color="black">0.52917 0.12425 0.26108 0.08549</font><font size="-2">[EOL]</font></font>
+<font color="red">     9:<font color="black">0.52519 0.12721 0.26411 0.08350</font><font size="-2">[EOL]</font></font>
+<font color="red">    10:<font color="black">0.52686 0.12591 0.26275 0.08448</font><font size="-2">[EOL]</font></font>
+<font color="red">    11:<font color="black">0.52609 0.12649 0.26334 0.08408</font><font size="-2">[EOL]</font></font>
+<font color="red">    12:<font color="black">End of program 6 by team 0</font><font size="-2">[EOL]</font></font>
+<font color="red">      :<font size="-2">[EOF]</font></font>
+</pre></tt>
+</p>
+</ul>
+</body>
+</html>

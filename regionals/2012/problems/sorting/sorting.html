@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem E: Approximate Sorting</title>
+    <style type="text/css"><!--
+			      html { margin-left: 4em; }
+			      h1 { margin-left: -2em; font-size: 14pt; }
+			      tt,pre { font-weight: bold; font-size: 12pt; }
+			      .image { text-align: center; border: 1px solid black; margin: 1em; }
+			      .left { float: left; }
+			      .right { float: right; }
+			      .break { page-break-before: always; }
+			     --></style>
+  </head><body>
+    <h1>Problem E: Approximate Sorting</h1>
+
+    <br/><b>Source:</b> <tt>sorting.{c,cpp,java}</tt>
+    <p>
+      In many programming languages, library functions are provided for sorting elements in an array. In order for these sorting functions to work for different types of elements, the user supplies a comparison function <tt>less(x,y)</tt> which returns true if and only if <tt>x</tt> comes before <tt>y</tt> in the sorted order. Of course, the comparison function has to 'make sense'. For example, for any two different elements <tt>x</tt> and <tt>y</tt>, exactly one of <tt>less(x,y)</tt> and <tt>less(y,x)</tt> should be true. For the purpose of this problem, an array is sorted when there are no inversions with respect to the comparison function. An inversion with respect to <tt>less(x,y)</tt> in an array <tt>A</tt> of size <tt>n</tt> (indexed from 0) is a pair of integers <tt>0 &le; i &lt; j &lt; n</tt> such that <tt>less(A[j], A[i]) = true</tt> (note that this may not be equivalent to <tt>less(A[i], A[j]) = false</tt>).</p>
+
+    <p>
+      Unfortunately, some programmers are not very careful in defining the comparison function. In such cases, there may be no way to sort the elements in an array to satisfy the comparison function. The best we can do is to produce a permutation minimizing the number of inversions with respect to the given comparison function.
+    </p>
+    <h1>Input</h1>
+
+    <p>
+      For each case, an integer <tt>n</tt>, 1 &le; n &le; 18, indicating the size of the array is given on one line. The elements in the array are labelled <tt>0</tt>, <tt>1</tt>, <tt>2</tt>, ..., <tt>n-1</tt>. The next <tt>n</tt> lines each contains a binary string of length <tt>n</tt>, with the <tt>j</tt><sup>th</sup> character of the <tt>i</tt><sup>th</sup> line indicating the result of the comparison function <tt>less(i, j)</tt> (0 means false and 1 means true). The end of input is indicated by a case in which <tt>n = 0</tt>. The last case should not be processed.
+    </p>
+
+    <h1>Output</h1>
+    <p>
+      For each case, output the permutation that has the smallest number of inversions with respect to the given comparison function. This is followed by a line containing a single integer indicating the number of inversions in the permutation. If there are multiple permutations with the same number of inversions, output the one that is lexicographically smallest.
+    </p>
+
+    <h1 class="break">Sample Input</h1>
+    <pre>
+4
+0111
+0000
+0100
+0110
+3
+011
+011
+011
+6
+101010
+011010
+110110
+000000
+111010
+001010
+0
+    </pre>
+
+    <h1>Sample Output</h1>
+    <pre>
+0 3 2 1
+0
+0 1 2
+1
+0 1 5 2 3 4
+5
+    </pre>
+  </body>
+</html>

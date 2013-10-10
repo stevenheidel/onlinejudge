@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem F: Nine</title>
+    <style type="text/css"><!--
+			      html { margin-left: 4em; }
+			      h1 { margin-left: -2em; font-size: 14pt; }
+			      tt,pre { font-weight: bold; font-size: 12pt; }
+			      .image { text-align: center; border: 1px solid black; margin: 1em; }
+img { margin: 1em; }
+.left { float: left; }
+			      .right { float: right; }
+			      .break { page-break-before: always; }
+			     --></style>
+  </head><body>
+    <h1>Problem F: Nine</h1>
+
+    <br/><b>Source:</b> <tt>nine.{c,cpp,java}</tt>
+    <img class="right" alt="xkcd nine" src="nine1.png" />
+    <p>
+      Randall Munroe from <tt>xkcd.com</tt> pointed out that 9 is the most rarely used key on a microwave. Let's all share the load.
+    </p>
+    <p>
+      Given a desired cooking time, find a sequence of keys with the greatest number of 9's such that the resulting time has less than 10% error compared to the desired cooking time. In other words, if <tt>T</tt> is the desired cooking time in seconds, and <tt>T9</tt> is the cooking time specified by the found sequence, then <tt>10|T - T9| &lt; T</tt>. If there are multiple possibilities, choose the one that has the smallest error (in magnitude). If there are still ties, choose the one that is lexicographically smallest.
+    </p>
+    <p>
+      For example, for T = 01:15, the times 00:68-00:82 and 1:08-1:22 have less than 10% error. Of these, 00:69, 00:79, 01:09, and 01:19 have the greatest number of 9's, and the ones with the smallest error are 00:79 and 01:19. The lexicographically smaller of these is 00:79.
+    </p>
+    <h1>Input</h1>
+
+    <p>
+      The input consists of a number of cases. For each case, the desired cooking time in <tt>MM:SS</tt> format is specified on one line. Each <tt>M</tt> or <tt>S</tt> can be any digit from 0 to 9. The end of input is indicated by 00:00.
+    </p>
+
+    <h1>Output</h1>
+    <p>
+      For each case, output on a single line the four keys to use as input to the microwave, in <tt>MM:SS</tt> format.
+    </p>
+
+    <h1 class="break">Sample Input</h1>
+    <pre>
+00:30
+01:00
+02:00
+91:30
+46:03
+00:00
+    </pre>
+
+    <h1>Sample Output</h1>
+    <pre>
+00:29
+00:59
+01:59
+90:99
+49:99
+    </pre>
+  </body>
+</html>

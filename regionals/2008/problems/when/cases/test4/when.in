@@ -1,0 +1,932 @@
+when ((1 xor $adding$) and (((0-1)<$case$) and  ($case$<(0+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((1-1)<$case$) and  ($case$<(1+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((2-1)<$case$) and  ($case$<(2+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((3-1)<$case$) and  ($case$<(3+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((4-1)<$case$) and  ($case$<(4+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((5-1)<$case$) and  ($case$<(5+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((6-1)<$case$) and  ($case$<(6+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((7-1)<$case$) and  ($case$<(7+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((8-1)<$case$) and  ($case$<(8+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((9-1)<$case$) and  ($case$<(9+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((10-1)<$case$) and  ($case$<(10+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((11-1)<$case$) and  ($case$<(11+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((12-1)<$case$) and  ($case$<(12+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((13-1)<$case$) and  ($case$<(13+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((14-1)<$case$) and  ($case$<(14+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((15-1)<$case$) and  ($case$<(15+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((16-1)<$case$) and  ($case$<(16+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((17-1)<$case$) and  ($case$<(17+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((18-1)<$case$) and  ($case$<(18+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((19-1)<$case$) and  ($case$<(19+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((20-1)<$case$) and  ($case$<(20+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((21-1)<$case$) and  ($case$<(21+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((22-1)<$case$) and  ($case$<(22+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((23-1)<$case$) and  ($case$<(23+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((24-1)<$case$) and  ($case$<(24+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((25-1)<$case$) and  ($case$<(25+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((26-1)<$case$) and  ($case$<(26+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((27-1)<$case$) and  ($case$<(27+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((28-1)<$case$) and  ($case$<(28+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((29-1)<$case$) and  ($case$<(29+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((30-1)<$case$) and  ($case$<(30+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((31-1)<$case$) and  ($case$<(31+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((32-1)<$case$) and  ($case$<(32+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((33-1)<$case$) and  ($case$<(33+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((34-1)<$case$) and  ($case$<(34+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((35-1)<$case$) and  ($case$<(35+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((36-1)<$case$) and  ($case$<(36+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((37-1)<$case$) and  ($case$<(37+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((38-1)<$case$) and  ($case$<(38+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((39-1)<$case$) and  ($case$<(39+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((40-1)<$case$) and  ($case$<(40+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((41-1)<$case$) and  ($case$<(41+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((42-1)<$case$) and  ($case$<(42+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((43-1)<$case$) and  ($case$<(43+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((44-1)<$case$) and  ($case$<(44+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((45-1)<$case$) and  ($case$<(45+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((46-1)<$case$) and  ($case$<(46+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((47-1)<$case$) and  ($case$<(47+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((48-1)<$case$) and  ($case$<(48+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((49-1)<$case$) and  ($case$<(49+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((50-1)<$case$) and  ($case$<(50+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((51-1)<$case$) and  ($case$<(51+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((52-1)<$case$) and  ($case$<(52+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((53-1)<$case$) and  ($case$<(53+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((54-1)<$case$) and  ($case$<(54+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((55-1)<$case$) and  ($case$<(55+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((56-1)<$case$) and  ($case$<(56+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((57-1)<$case$) and  ($case$<(57+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((58-1)<$case$) and  ($case$<(58+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((59-1)<$case$) and  ($case$<(59+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((60-1)<$case$) and  ($case$<(60+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((61-1)<$case$) and  ($case$<(61+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((62-1)<$case$) and  ($case$<(62+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((63-1)<$case$) and  ($case$<(63+1))))
+  set        $a3$=0,$a2$=0,$a1$=0,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((64-1)<$case$) and  ($case$<(64+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((65-1)<$case$) and  ($case$<(65+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((66-1)<$case$) and  ($case$<(66+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((67-1)<$case$) and  ($case$<(67+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((68-1)<$case$) and  ($case$<(68+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((69-1)<$case$) and  ($case$<(69+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((70-1)<$case$) and  ($case$<(70+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((71-1)<$case$) and  ($case$<(71+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((72-1)<$case$) and  ($case$<(72+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((73-1)<$case$) and  ($case$<(73+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((74-1)<$case$) and  ($case$<(74+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((75-1)<$case$) and  ($case$<(75+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((76-1)<$case$) and  ($case$<(76+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((77-1)<$case$) and  ($case$<(77+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((78-1)<$case$) and  ($case$<(78+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((79-1)<$case$) and  ($case$<(79+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((80-1)<$case$) and  ($case$<(80+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((81-1)<$case$) and  ($case$<(81+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((82-1)<$case$) and  ($case$<(82+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((83-1)<$case$) and  ($case$<(83+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((84-1)<$case$) and  ($case$<(84+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((85-1)<$case$) and  ($case$<(85+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((86-1)<$case$) and  ($case$<(86+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((87-1)<$case$) and  ($case$<(87+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((88-1)<$case$) and  ($case$<(88+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((89-1)<$case$) and  ($case$<(89+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((90-1)<$case$) and  ($case$<(90+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((91-1)<$case$) and  ($case$<(91+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((92-1)<$case$) and  ($case$<(92+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((93-1)<$case$) and  ($case$<(93+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((94-1)<$case$) and  ($case$<(94+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((95-1)<$case$) and  ($case$<(95+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=0
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((96-1)<$case$) and  ($case$<(96+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((97-1)<$case$) and  ($case$<(97+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((98-1)<$case$) and  ($case$<(98+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((99-1)<$case$) and  ($case$<(99+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((100-1)<$case$) and  ($case$<(100+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((101-1)<$case$) and  ($case$<(101+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((102-1)<$case$) and  ($case$<(102+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((103-1)<$case$) and  ($case$<(103+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((104-1)<$case$) and  ($case$<(104+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((105-1)<$case$) and  ($case$<(105+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((106-1)<$case$) and  ($case$<(106+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((107-1)<$case$) and  ($case$<(107+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((108-1)<$case$) and  ($case$<(108+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((109-1)<$case$) and  ($case$<(109+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((110-1)<$case$) and  ($case$<(110+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((111-1)<$case$) and  ($case$<(111+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((112-1)<$case$) and  ($case$<(112+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((113-1)<$case$) and  ($case$<(113+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((114-1)<$case$) and  ($case$<(114+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((115-1)<$case$) and  ($case$<(115+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((116-1)<$case$) and  ($case$<(116+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((117-1)<$case$) and  ($case$<(117+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((118-1)<$case$) and  ($case$<(118+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((119-1)<$case$) and  ($case$<(119+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((120-1)<$case$) and  ($case$<(120+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((121-1)<$case$) and  ($case$<(121+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((122-1)<$case$) and  ($case$<(122+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((123-1)<$case$) and  ($case$<(123+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((124-1)<$case$) and  ($case$<(124+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((125-1)<$case$) and  ($case$<(125+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((126-1)<$case$) and  ($case$<(126+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((127-1)<$case$) and  ($case$<(127+1))))
+  set        $a3$=0,$a2$=0,$a1$=1,$a0$=1
+  set        $b3$=1,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((128-1)<$case$) and  ($case$<(128+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((129-1)<$case$) and  ($case$<(129+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((130-1)<$case$) and  ($case$<(130+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((131-1)<$case$) and  ($case$<(131+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((132-1)<$case$) and  ($case$<(132+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((133-1)<$case$) and  ($case$<(133+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((134-1)<$case$) and  ($case$<(134+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((135-1)<$case$) and  ($case$<(135+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((136-1)<$case$) and  ($case$<(136+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((137-1)<$case$) and  ($case$<(137+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((138-1)<$case$) and  ($case$<(138+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((139-1)<$case$) and  ($case$<(139+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((140-1)<$case$) and  ($case$<(140+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((141-1)<$case$) and  ($case$<(141+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((142-1)<$case$) and  ($case$<(142+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((143-1)<$case$) and  ($case$<(143+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=0,$b2$=1,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((144-1)<$case$) and  ($case$<(144+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((145-1)<$case$) and  ($case$<(145+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((146-1)<$case$) and  ($case$<(146+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((147-1)<$case$) and  ($case$<(147+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=0,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((148-1)<$case$) and  ($case$<(148+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((149-1)<$case$) and  ($case$<(149+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=0
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=1
+  set $adding$=1,$adding0$=1
+end when
+when ((1 xor $adding$) and (((150-1)<$case$) and  ($case$<(150+1))))
+  set        $a3$=0,$a2$=1,$a1$=0,$a0$=0
+  set        $b3$=1,$b2$=0,$b1$=1,$b0$=1
+  set $c4$=0,$c3$=0,$c2$=0,$c1$=0,$c0$=0
+  set $adding$=1,$adding0$=1
+end when
+when $adding0$
+  set $d0$=(($a0$ xor $b0$) xor $c0$)
+  set $c1$=((($a0$ and $b0$) or ($a0$ and $c0$)) or ($b0$ and $c0$))
+  set $adding0$=0,$adding1$=1
+end when
+when $adding1$
+  set $d1$=(($a1$ xor $b1$) xor $c1$)
+  set $c2$=((($a1$ and $b1$) or ($a1$ and $c1$)) or ($b1$ and $c1$))
+  set $adding1$=0,$adding2$=1
+end when
+when $adding2$
+  set $d2$=(($a2$ xor $b2$) xor $c2$)
+  set $c3$=((($a2$ and $b2$) or ($a2$ and $c2$)) or ($b2$ and $c2$))
+  set $adding2$=0,$adding3$=1
+end when
+when $adding3$
+  set $d3$=(($a3$ xor $b3$) xor $c3$)
+  set $c4$=((($a3$ and $b3$) or ($a3$ and $c3$)) or ($b3$ and $c3$))
+  print 0
+  print 0,0,0,0,$c0$
+  print 0,$a3$,$a2$,$a1$,$a0$
+  print 0,$b3$,$b2$,$b1$,$b0$
+  print $c4$,$d3$,$d2$,$d1$,$d0$
+  set $case$=($case$+1)
+  set $adding3$=0,$adding$=0
+end when

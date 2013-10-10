@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Problem B: Chemistry</title>
+    <style type="text/css"><!--
+			      html { margin-left: 4em; }
+			      h1 { margin-left: -2em; font-size: 14pt; }
+			      tt,pre { font-weight: bold; font-size: 12pt; }
+			      .image { text-align: center; border: 1px solid black; margin: 1em; }
+			      .left { float: left; }
+			      .right { float: right; }
+			      .break { page-break-before: always; }
+			     --></style>
+  </head><body>
+    <h1>Problem B: Chemistry</h1>
+
+    <br/><b>Source:</b> <tt>chemistry.{c,cpp,java}</tt>
+
+    <p>
+      The chemical formula of a molecule <tt>M</tt> describes its atomic make-up. Chemical formulas obey the following grammar:
+    </p>
+    <pre>
+      M := G | M G
+      G := S | S C
+      S := A | '(' M ')'
+      C := T | N E
+      E := D | D E
+      T := '2' | ... | '9'
+      N := '1' | ... | '9'
+      D := '0' | .. | '9'
+      A := U | U L | U L L 
+      U := 'A' | .. | 'Z'
+      L := 'a' | .. | 'z'
+    </pre>
+    <p>
+      The count <tt>C</tt> represents a multiplier for the subgroup
+      <tt>S</tt> that precedes it. For example, <tt>H2O</tt> has two
+      <tt>H</tt> (hydrogen) and one <tt>O</tt> (oxygen) atoms, and
+      <tt>(AlC2)3Na4</tt> contains 3 <tt>Al</tt> (aluminum), 6
+      <tt>C</tt> (carbon) and 4 <tt>Na</tt> (sodium) atoms.
+    </p>
+    <h1>Input</h1>
+
+    <p>
+      The input will contain data for one or more test cases. For each test case, there will be one line of input, containing a valid chemical formula. Each line will have no more than 100 characters.
+    </p>
+
+    <h1>Output</h1>
+    <p>
+      For each line of input there will be one line of output which is the atomic decomposition of the chemical in the form of a sum as shown in the sample output. The atoms are listed in lexicographical order, and a count of 1 is implied and not explicitly written. There are no blank spaces in the output. All of the counts in the correct output will be representable in 32-bit signed integers.
+    </p>
+
+    <h1 class="break">Sample Input</h1>
+    <pre>
+H2O
+(AlC2)3Na4
+    </pre>
+
+    <h1>Sample Output</h1>
+    <pre>
+2H+O
+3Al+6C+4Na
+    </pre>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Problem H: Wavelet Compression</title>
+  </head>
+
+  <body>
+    <h1>Problem H: Wavelet Compression</h1>
+    <p>
+    <b>Input</b>:  <tt>wavelet.in</tt><br>
+    <b>Output</b>: <tt>wavelet.out</tt>
+    </p>
+
+<p>The discrete wavelet transform is a popular tool for signal compression. In
+this problem, your job is to write a program to decompress a
+one-dimensional signal (a list of integers) that has been compressed by
+a simple wavelet transform.</p>
+
+<p>To understand how this simple wavelet transform works, suppose that we have a list of an even number of
+integers. We compute the sum and difference of each pair of consecutive
+samples, resulting in two lists of sums and differences each having
+half the original length. Formally, if the original samples are 
+<pre>
+a(1),..., a(n)
+</pre>
+the i-th sum <code>s(i)</code> and difference <code>d(i)</code> are computed as:
+<pre>
+for i = 1,...,n/2:
+  s(i) = a(2*i-1) + a(2*i)
+  d(i) = a(2*i-1) - a(2*i)
+</pre>
+This is then rearranged to give the transformed signal by first listing
+the sums and then the differences. For example, if the input signal is:
+<pre>
+  5, 2, 3, 2, 5, 7, 9, 6
+</pre>
+Then the sum and difference signals are:
+<pre>
+   s(i) = 7, 5, 12, 15
+   d(i) = 3, 1, -2, 3
+</pre>
+Thus, the transformed signal is:
+<pre>
+  7, 5, 12, 15, 3, 1, -2, 3
+</pre>
+</p>
+
+<p>The same process is applied recursively to the first half of the transformed signal, treating <code>s(i)</code> as the input signal, until the length of the input signal is 1.  In the example above, the final transformed signal is:
+<pre>
+   39, -15, 2, -3, 3, 1, -2, 3
+</pre>
+It is assumed that the length of the original input is a power of 2, and
+the input signal consists of integers between 0 and 255 (inclusive)
+only.</p>
+
+<h2>Input</h2>
+
+<p>The input consists of a number of cases.  Each case is specified on a line, starting with an integer <code>N</code> (1 &lt;= <code>N</code> &lt;= 256) indicating the number of samples.  The next <code>N</code> integers are the transformed samples.  The end of input is indicated by a case in which <code>N</code> = 0.</p>
+
+<h2>Output</h2>
+
+<p>For each test case, output the original samples on a single line, separated by a single space.</p>
+
+<h2>Sample Input</h2>
+<pre>
+8 39 -15 2 -3 3 1 -2 3
+4 10 -4 -1 -1
+0
+</pre>
+
+<h2>Sample Output</h2>
+<pre>
+5 2 3 2 5 7 9 6
+1 2 3 4
+</pre>
+  </body>
+</html>

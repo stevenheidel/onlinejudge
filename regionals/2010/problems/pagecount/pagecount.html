@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Problem E: Page Count</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+      .image { text-align: center; border: 1px solid black; margin: 1em; }
+      .left { float: left; }
+      .right { float: right; }
+      .break { page-break-before: always; }
+  --></style>
+</head><body>
+    <h1>Problem E: Page Count</h1>
+
+    <br/><b>Source:</b> <tt>pagecount.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>console {stdin,cin,System.in}</tt>
+    <br/><b>Output:</b> <tt>console {stdout,cout,System.out}</tt>
+
+<p>When you execute a word processor&apos;s <tt>print</tt> command,
+you are normally prompted to specify the pages you want printed. You
+might, for example, enter:</p>
+<blockquote><tt>
+10-15,25-28,8-4,13-20,9,8-8
+</tt></blockquote>
+<p>The expression you enter is a list of print ranges, separated by
+commas.</p>
+
+<p>Each print range is either a single positive integer, or two
+positive integers separated by a hyphen. In the latter case we call
+the first integer <tt>low</tt> and the second one <tt>high</tt>. A print range for
+which <tt>low &gt; high</tt> is simply ignored. A print range that specifies page
+numbers exceeding the number of pages is processed so that only the
+pages available in the document are printed. Pages are numbered
+starting from 1.</p>
+
+<p>Some of the print ranges may overlap. Pages which are common to two
+or more print ranges will be printed only once. (In the example given,
+pages 13, 14 and 15 are common to two print ranges.)</p> 
+
+<h1>Input</h1>
+
+<p>The input will contain data for a number of problem instances. For
+each problem instance there will be two lines of input. The first line
+will contain a single positive integer: the number of pages in the
+document. The second line will contain a list of print ranges, as
+defined by the rules stated above. End of input will be indicated by 0
+for the number of pages. The number of pages in any book is at most
+1000. The list of print ranges will be not be longer than 1000
+characters.</p>
+
+<h1>Output</h1>
+
+<p>For each problem instance, the output will be a single number,
+displayed at the beginning of a new line. It will be the number of
+pages printed by the <tt>print</tt> command.</p> 
+
+<h1 class="break">Sample input</h1>
+<pre>
+30
+10-15,25-28,8-4,13-20,9,8-8
+19
+10-15,25-28,8-4,13-20,9,8-8
+0
+</pre>
+
+<h1>Sample Output</h1>
+<pre>
+17
+12
+</pre>
+</body>
+</html>
