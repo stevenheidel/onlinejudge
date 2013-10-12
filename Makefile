@@ -1,25 +1,25 @@
-EXECUTABLE="`pwd | sed 's/^.*\///'`"
-OUTPUT_FILE="${EXECUTABLE}.out"
-UVA_INPUT_FILE="`find . -name *.in`"
-UVA_OUTPUT_FILE="`find . -name *.in | sed 's/in$$/answer/'`"
+e="`pwd | sed 's/^.*\///'`"
+o="${e}.out"
+i="`find . -name *.in`"
+a="`find . -name *.in | sed 's/in$$/answer/'`"
 
-CC=g++
-CC_FLAGS=-lm -lcrypt -O2 -pipe -DONLINE_JUDGE -g -Wall -pedantic
+c=g++
+f=-lm -lcrypt -O2 -pipe -g -Wall -pedantic
 
 default: test
 
 build:
-	@$(CC) $(CC_FLAGS)  *.cpp -o ${EXECUTABLE}
+	@$(c) $(f)  *.cpp -o ${e}
 
 run: build
-	@./${EXECUTABLE} < ${UVA_INPUT_FILE}
+	@./${e} < ${i}
 
 test: build
-	@./${EXECUTABLE} < ${UVA_INPUT_FILE} > ${OUTPUT_FILE}
-	@diff ${OUTPUT_FILE} ${UVA_OUTPUT_FILE}
+	@./${e} < ${i} > ${o}
+	@diff ${o} ${a}
 
 clip:
-	cat ${EXECUTABLE}.cpp | xclip -selection clipboard
+	cat ${e}.cpp | xclip -selection clipboard
 
 clean:
-	@rm ${EXECUTABLE} ${OUTPUT_FILE}
+	rm ${e} ${o}
