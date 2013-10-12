@@ -1,0 +1,71 @@
+#include <cstdio>
+#include <cstdlib>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	int N = -1;
+
+	while (scanf("%i", &N), N != 0) {
+		int x1, y1, x2, y2;
+		scanf("%i %i %i %i", &x1, &y1, &x2, &y2);
+
+		double cx[101], cy[101], cr[101];
+
+		for (int i = 0; i < N; i++) {
+			scanf("%lf %lf %lf", &cx[i], &cy[i], &cr[i]);
+		}
+
+		vector<pair<double, double> > intervals;
+		pair<double, double> temp;
+
+		double dx, dy, ix, iy, a, b, c, det, l, u;
+		for (int i = 0; i < N; i++) {
+			dx = x2 - x1;
+			dy = y2 - y1;
+
+			ix = x1-cx[i];
+			iy = y1-cy[i];
+
+		//	printf("dx: %lf, dy: %lf, ix: %lf, iy: %lf\n", dx, dy, ix, iy);
+
+			a = dx*dx + dy*dy;
+			b = 2*(dx*ix + dy*iy);
+			c = ix*ix + iy*iy - cr[i]*cr[i];
+
+		//	printf("a:%lf b:%lf c:%lf\n", a, b, c);
+
+			det = b*b - 4*a*c;
+
+			if (det >= 0) {
+				l = (-b - sqrt(det)) / (2*a);
+				u = (-b + sqrt(det)) / (2*a);
+			//	printf("l:%lf u:%lf\n", l, u);
+
+				if (!(l > 1 || u < 0)) {
+					temp.first = max(l, 0.0);
+					temp.second = min(u, 1.0);
+					intervals.push_back(temp);
+				}
+			}
+		}
+
+		sort(intervals.begin(), intervals.end());
+
+		double accum = 0.0;
+		double upper = 0.0;
+
+		for (int i = 0; i < intervals.size(); i++) {
+			//printf("%lf %lf\n", intervals[i].first, intervals[i].second);
+			if (intervals[i].first > upper)
+				accum += intervals[i].first - upper;
+			upper = max(upper, intervals[i].second);
+		}
+		accum += 1 - upper;
+
+		printf("%.2lf\n", (1-accum)*100.0);
+	}
+}

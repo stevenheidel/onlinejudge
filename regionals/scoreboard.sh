@@ -15,7 +15,7 @@ for dir in ../problems/$1/cases/*; do
         break
     fi
     
-    diff ../$1.temp ${dir}/$1.out > /dev/null 
+    diff ../$1.temp ${dir}/$1.out 2>1
     if [ $? -eq 1 ]; then
         ans="WA"
         break

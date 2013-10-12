@@ -4,7 +4,7 @@ UVA_INPUT_FILE="`find . -name *.in`"
 UVA_OUTPUT_FILE="`find . -name *.in | sed 's/in$$/answer/'`"
 
 CC=g++
-CC_FLAGS=-lm -lcrypt -O2 -pipe -DONLINE_JUDGE
+CC_FLAGS=-lm -lcrypt -O2 -pipe -DONLINE_JUDGE -g -Wall -pedantic
 
 default: test
 
