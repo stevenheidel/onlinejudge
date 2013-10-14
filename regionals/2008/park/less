@@ -1,0 +1,31 @@
+park.cpp:28:1: warning: ISO C++ 1998 does not support 'long long' [-Wlong-long]
+park.cpp: In function 'bool ffind(std::pair<int, int>, vi)':
+park.cpp:72:32: error: no matching function for call to 'lower_bound(vi&, int&)'
+park.cpp:72:32: note: candidates are:
+In file included from /usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/algorithm:62:0,
+                 from park.cpp:1:
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:937:5: note: template<class _ForwardIterator, class _Tp> _ForwardIterator std::lower_bound(_ForwardIterator, _ForwardIterator, const _Tp&)
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:937:5: note:   template argument deduction/substitution failed:
+park.cpp:72:32: note:   deduced conflicting types for parameter '_ForwardIterator' ('std::vector<int>' and 'int')
+In file included from /usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/algorithm:63:0,
+                 from park.cpp:1:
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algo.h:2450:5: note: template<class _FIter, class _Tp, class _Compare> _FIter std::lower_bound(_FIter, _FIter, const _Tp&, _Compare)
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algo.h:2450:5: note:   template argument deduction/substitution failed:
+park.cpp:72:32: note:   deduced conflicting types for parameter '_FIter' ('std::vector<int>' and 'int')
+park.cpp:73:27: error: expected ')' before 'tup'
+park.cpp:73:30: error: no matching function for call to 'lower_bound(vi&)'
+park.cpp:73:30: note: candidates are:
+In file included from /usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/algorithm:62:0,
+                 from park.cpp:1:
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:937:5: note: template<class _ForwardIterator, class _Tp> _ForwardIterator std::lower_bound(_ForwardIterator, _ForwardIterator, const _Tp&)
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algobase.h:937:5: note:   template argument deduction/substitution failed:
+park.cpp:73:30: note:   candidate expects 3 arguments, 1 provided
+In file included from /usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/algorithm:63:0,
+                 from park.cpp:1:
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algo.h:2450:5: note: template<class _FIter, class _Tp, class _Compare> _FIter std::lower_bound(_FIter, _FIter, const _Tp&, _Compare)
+/usr/lib/gcc/x86_64-mageia-linux-gnu/4.7.2/../../../../include/c++/4.7.2/bits/stl_algo.h:2450:5: note:   template argument deduction/substitution failed:
+park.cpp:73:30: note:   candidate expects 4 arguments, 1 provided
+park.cpp:70:6: warning: unused variable 'tup' [-Wunused-variable]
+park.cpp: In function 'bool solve(int)':
+park.cpp:121:15: error: 'MAX_INT' was not declared in this scope
+make: *** [build] Error 1

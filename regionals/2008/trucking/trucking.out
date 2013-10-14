@@ -1,0 +1,10 @@
+Case 1:
+maximum height = 7
+length of shortest route = 20
+
+Case 2:
+maximum height = 4
+length of shortest route = 8
+
+Case 3:
+cannot reach destination
