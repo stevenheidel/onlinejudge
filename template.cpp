@@ -20,16 +20,23 @@
 #include <vector>
 
 using namespace std;
-
-#define DEBUG true
  
 #define Each(x, v) for (typeof (v).begin() x=(v).begin(); x !=(v).end(); ++x)
 #define For(i, a, b) for (int i=(a); i<(b); ++i)
 
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+typedef vector<ii> vii;
+typedef set<int> si;
+typedef map<string, int> msi;
+
+#define DEBUG true
+
 #if DEBUG
 #define D(x) cout << #x " is " << x << endl
-#define DA(x,n) cout << #x ":\n";For(i,0,n){cout<<x[i]<<" ";};cout<<endl
-#define DAA(x,m,n) cout << #x ":\n";For(i,0,m){For(j,0,n){cout<<x[i][j]<<" ";};cout<<endl;}
+#define DA(x,n) cout << #x ":\n";For(i,0,n){cout<<x[i]<<" "};cout<<endl
+#define DAA(x,m,n) cout << #x ":\n";For(i,0,m){For(j,0,n){cout<<x[i][j]<<" "};cout<<endl}
 #else
 #define D(x)
 #define DA(x,n)
@@ -37,7 +44,6 @@ using namespace std;
 #endif
 
 bool solve(int T) {
-
 	return true;
 }
  
@@ -47,6 +53,6 @@ int main() {
 	For(i,0,N)
 		solve(i+1);
 	//while (solve(N++)) {}
-
+	
 	return 0;
 }
