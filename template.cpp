@@ -7,6 +7,7 @@
 #include <cstring>
 #include <deque>
 #include <fstream>
+#include <iomanip>
 #include <iostream>
 #include <iterator>
 #include <list>
@@ -21,12 +22,17 @@
 
 using namespace std;
  
-#define Each(x, v) for (typeof (v).begin() x=(v).begin(); x !=(v).end(); ++x)
-#define For(i, a, b) for (int i=(a); i<(b); ++i)
+#define Each(x, v) for (typeof((v).begin()) x=(v).begin(); x !=(v).end(); ++x)
+#define For(i, a, b) for (typeof(b) i=(a); i<(b); ++i)
+#define mp make_pair
+#define pb push_back
+#define all(a) a.begin(), a.end()
+#define sz(a) ((int)(a.size()))
 
 typedef long long ll;
 typedef vector<int> vi;
-typedef pair<int, int> pi;
+typedef vector<vi> vvi;
+typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef set<int> si;
 typedef map<string, int> msi;
@@ -35,8 +41,8 @@ typedef map<string, int> msi;
 
 #if DEBUG
 #define D(x) cout << #x " is " << x << endl
-#define DA(x,n) cout << #x ":\n";For(i,0,n){cout<<x[i]<<" "};cout<<endl
-#define DAA(x,m,n) cout << #x ":\n";For(i,0,m){For(j,0,n){cout<<x[i][j]<<" "};cout<<endl}
+#define DA(x,n) cout << #x " is...\n";For(i,0,n){cout<<x[i]<<" ";}cout<<endl
+#define DAA(x,m,n) cout << #x " is...\n";For(i,0,m){For(j,0,n){cout<<x[i][j]<<" ";}cout<<endl;}
 #else
 #define D(x)
 #define DA(x,n)

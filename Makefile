@@ -6,7 +6,7 @@ a="$e.answer"
 default: test
 
 build:
-	@g++ -lm -O2 -g -Wall -pedantic *.cpp -o $e
+	@g++ -lm -O2 -g -Wall -Wno-long-long -pedantic *.cpp -o $e
 
 run: build
 	@./$e < $i
