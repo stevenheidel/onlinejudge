@@ -23,7 +23,7 @@
 using namespace std;
  
 #define Each(x, v) for (typeof((v).begin()) x=(v).begin(); x !=(v).end(); ++x)
-#define For(i, a, b) for (typeof(b) i=(a); i<(b); ++i)
+#define For(i, a, b) for (int i=(a); i<(b); ++i)
 #define mp make_pair
 #define pb push_back
 #define all(a) a.begin(), a.end()
