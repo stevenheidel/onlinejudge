@@ -1,0 +1,11 @@
+10
+X=7
+A=B+C+D+E+F+G+H+I+J+K+L+M+N+O+P+Q+R+S+T+U+V+W+X+Y+Z
+Y=W+W-W+Z-Z-Z
+K=12345*G+12345*H-12345*I-1*J
+B=A+A+2*N+3*M+123*L-5*M-3*J
+Q=J+U+S+T+O+U+T+P+U+T+T+H+E+I+N+P+U+T
+A=B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+B+C
+Z=L*A*S*T*2-L-E-T-T-E-R
+S=S+T*R*I+N+G-T-R-I
+A=B+C+D*E-D-E-B*C

@@ -1,0 +1,77 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
+public class GenI {
+
+	class Edge {
+		int u, v, w;
+
+		public Edge(int u, int v, int w) {
+			super();
+			this.u = u;
+			this.v = v;
+			this.w = w;
+		}
+
+		public String toString() {
+			return u + " " + v + " " + w;
+		}
+	}
+
+	private Random rnd = new Random();
+
+	private void work() throws IOException {
+		for (int i = 6; i <= 10; i++) {
+			int n = 20;
+			int wLim = 50;
+			List<Edge> edges = getRandomDirected(n, wLim);
+			PrintWriter pw = new PrintWriter(new FileWriter(String.format(
+					"I.%d.in", i)));
+			pw.println(n + " " + edges.size());
+			for (Edge e : edges)
+				pw.println(e);
+			pw.close();
+		}
+
+		for (int i = 10; i <= 15; i++) {
+			int n = 100;
+			int wLim = 1000;
+			List<Edge> edges = getRandomDirected(n, wLim);
+			PrintWriter pw = new PrintWriter(new FileWriter(String.format(
+					"I.%d.in", i)));
+			pw.println(n + " " + edges.size());
+			for (Edge e : edges)
+				pw.println(e);
+			pw.close();
+		}
+
+	}
+
+	private List<Edge> getRandomDirected(int n, int wLim) {
+		if (rnd == null)
+			rnd = new Random();
+		List<Edge> g = new ArrayList<Edge>();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (i == j)
+					continue;
+				int w = rnd.nextInt(wLim) - wLim;
+				g.add(new Edge(i, j, w));
+			}
+		}
+		Collections.shuffle(g);
+		for(Edge e : g){
+            if(rnd.nextInt(10)==0) e.w = -e.w;
+        return g;
+	}
+
+	public static void main(String[] args) throws IOException {
+		new GenI().work();
+	}
+
+}

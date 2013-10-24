@@ -37,7 +37,7 @@ typedef vector<ii> vii;
 typedef set<int> si;
 typedef map<string, int> msi;
 
-#define DEBUG true
+#define DEBUG false
 
 #if DEBUG
 #define D(x) cout << #x " is " << x << endl
