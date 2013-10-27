@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.26)  13 OCT 2013 21:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.10.22)  24 OCT 2013 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cheatsheet.tex
 (./cheatsheet.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -66,15 +65,15 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \lst@maxwidth=\dimen106
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
 \c@lstnumber=\count94
 \lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2007/02/22 1.4 listings configuration
+File: listings.cfg 2013/06/27 1.5pre1 listings configuration
 ))
-Package: listings 2007/02/22 1.4 (Carsten Heinz)
+Package: listings 2013/07/10 1.5 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
@@ -212,34 +211,34 @@ LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 42.
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2004/09/05 1.3 listings language file
+File: lstlang1.sty 2013/06/27 1.5pre1 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2004/09/05 1.3 listings language file
+File: lstlang2.sty 2013/06/27 1.5pre1 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
 ) (../Makefile)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2004/09/05 1.3 listings language file
+File: lstlang1.sty 2013/06/27 1.5pre1 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2004/09/05 1.3 listings language file
+File: lstlang1.sty 2013/06/27 1.5pre1 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (../template.cpp [2]) [3]
 (./cheatsheet.aux) ) 
 Here is how much of TeX's memory you used:
- 3096 strings out of 495059
- 43377 string characters out of 3182030
- 148006 words of memory out of 3000000
- 6269 multiletter control sequences out of 15000+200000
- 7745 words of font info for 28 fonts, out of 3000000 for 9000
+ 3117 strings out of 495031
+ 43614 string characters out of 6181530
+ 150700 words of memory out of 5000000
+ 6314 multiletter control sequences out of 15000+600000
+ 7745 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,6n,61p,222b,1604s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,6n,61p,222b,1602s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/steven/.texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1
 000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
@@ -247,7 +246,7 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cheatsheet.pdf (3 pages, 72538 bytes).
+Output written on cheatsheet.pdf (3 pages, 72801 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
