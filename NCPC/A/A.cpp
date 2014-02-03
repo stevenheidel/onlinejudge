@@ -7,7 +7,6 @@
 #include <cstring>
 #include <deque>
 #include <fstream>
-#include <functional>
 #include <iomanip>
 #include <iostream>
 #include <iterator>
@@ -51,15 +50,33 @@ typedef map<string, int> msi;
 #endif
 
 bool solve(int T) {
+	int N;
+	cin >> N;
+
+	vi t(N);
+
+	For(i,0,N)
+		cin >> t[i];
+
+	sort(all(t), greater<int>());
+
+	For(i,0,N)
+		t[i]+=i+1;
+
+	int ans = 0;
+
+	For(i,0,N)
+		ans = max(ans,t[i]);
+
+	cout << ans+1 << endl;
+
 	return true;
 }
  
 int main() {
 	int N = 1;
-	cin >> N;
-	For(i,0,N)
-		solve(i+1);
-	//while (solve(N++)) {}
+	while (N--)
+		solve(N);
 	
 	return 0;
 }

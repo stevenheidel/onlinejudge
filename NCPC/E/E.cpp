@@ -7,7 +7,6 @@
 #include <cstring>
 #include <deque>
 #include <fstream>
-#include <functional>
 #include <iomanip>
 #include <iostream>
 #include <iterator>
@@ -51,15 +50,45 @@ typedef map<string, int> msi;
 #endif
 
 bool solve(int T) {
+	string a, b;
+
+	cin >> a >> b;
+
+	int ans = sz(b);
+	For(i,0,sz(a)) {
+		if (i >= sz(b))
+			break;
+
+		if (a[i] == b[i])
+			ans--;
+		else
+			break;
+	}
+
+	if (ans > 0) {
+		int j = sz(b)-1;
+		for (int i = sz(a)-1; i >= 0; i--) {
+			if (j < 0 )
+				break;
+
+			if (a[i] == b[j])
+				ans--;
+			else
+				break;
+
+			j--;
+		}
+	}
+
+	cout << ans << endl;
+
 	return true;
 }
  
 int main() {
-	int N = 1;
-	cin >> N;
+	int N = 2;
 	For(i,0,N)
 		solve(i+1);
-	//while (solve(N++)) {}
 	
 	return 0;
 }

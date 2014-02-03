@@ -7,7 +7,6 @@
 #include <cstring>
 #include <deque>
 #include <fstream>
-#include <functional>
 #include <iomanip>
 #include <iostream>
 #include <iterator>
@@ -50,16 +49,46 @@ typedef map<string, int> msi;
 #define DAA(x,m,n)
 #endif
 
+bool opposite(string a, string b) {
+	For(i,0,sz(a))
+		if (a[i] == '0')
+			a[i] = '1';
+		else
+			a[i] = '0';
+
+	return (a == b);
+}
+
 bool solve(int T) {
+	int N;
+	cin >> N;
+
+	string one;
+	string two;
+	cin >> one >> two;
+
+	bool valid = false;
+	if (N % 2 == 0) {
+		if (one == two)
+			valid = true;
+	}
+	else {
+		if (opposite(one, two))
+			valid = true;
+	}
+
+	if (valid)
+		cout << "Deletion succeeded" << endl;
+	else
+		cout << "Deletion failed" << endl;
+
 	return true;
 }
  
 int main() {
 	int N = 1;
-	cin >> N;
 	For(i,0,N)
 		solve(i+1);
-	//while (solve(N++)) {}
 	
 	return 0;
 }
